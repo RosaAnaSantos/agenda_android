@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <string-array name="formacion">
+        <item>SMR</item>
+        <item>DAM</item>
+        <item>DAW</item>
+        <item>ASIR</item>
+        <item>Ingeniería téc. informática</item>
+        <item>Ingeniería informática</item>
+        <item>Grado</item>
+        <item>Otros</item>
+    </string-array>
+
+</resources>

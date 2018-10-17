@@ -144,4 +144,28 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_telefono" />
 
 
+
+    <TextView
+        android:id="@+id/textV_formacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Formación"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textV_email" />
+
+    <Spinner
+        android:id="@+id/spinner_formacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:entries="@array/formacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+
+
 </android.support.constraint.ConstraintLayout>
