@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     private EditText editext_telefono;
     private EditText editext_email;
     private Spinner spinner_formacion;
+    private TextView totalAlumnos;
     private Button boton_guardar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         editext_telefono = findViewById(R.id.editText_telefono);
         editext_email = findViewById(R.id.editText_email);
         spinner_formacion = findViewById(R.id.spinner_formacion);
+        totalAlumnos = findViewById(R.id.total_alumnos);
         boton_guardar = findViewById(R.id.btn_guardar);
 
         Button btn_cargar = findViewById(R.id.btn_guardar);
@@ -51,6 +54,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             new Alumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno, formacion);
 
             listaAlumnos.add(alumno);
+            int numAlumnos = listaAlumnos.size();
+            totalAlumnos.setText(numAlumnos + " ");
             //Limpiamos campos en cada ingreso de datos
             editext_nombre.setText(" ");
             editext_apellidos.setText(" ");
@@ -59,7 +64,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             spinner_formacion.setSelection(0);//Vuelve a quedar al valor por defecto cada vez que se ingrese un dato sin instalar de nuevo la app
             editext_nombre.requestFocus();//Volvemos el foco/el cursor al primer elemento del formulario
 
-            Toast.makeText(this, "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " con formación en " + formacion, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " con formación en " + formacion+"."+"\n Total: "+numAlumnos+" registrados", Toast.LENGTH_LONG).show();
         }
 
     }
