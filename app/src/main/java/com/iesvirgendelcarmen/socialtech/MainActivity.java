@@ -3,8 +3,10 @@ package com.iesvirgendelcarmen.socialtech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.MultiAutoCompleteTextView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,7 +21,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     private EditText editext_apellidos;
     private EditText editext_telefono;
     private EditText editext_email;
-    private Spinner spinner_formacion;
+   // private Spinner spinner_formacion;
+   private MultiAutoCompleteTextView mt_formacion;
     private TextView totalAlumnos;
     private Button boton_guardar;
     @Override
@@ -30,9 +33,18 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         editext_apellidos = findViewById(R.id.editText_apellidos);
         editext_telefono = findViewById(R.id.editText_telefono);
         editext_email = findViewById(R.id.editText_email);
-        spinner_formacion = findViewById(R.id.spinner_formacion);
+       // spinner_formacion = findViewById(R.id.spinner_formacion);
+        mt_formacion=findViewById(R.id.multiAutoCompleteTextView);
+
         totalAlumnos = findViewById(R.id.total_alumnos);
         boton_guardar = findViewById(R.id.btn_guardar);
+
+        String[] formaciones = getResources().getStringArray(R.array.formacion);
+
+        ArrayAdapter adapterFormacion = new ArrayAdapter(this,
+                android.R.layout.simple_spinner_dropdown_item,formaciones);
+        mt_formacion.setAdapter(adapterFormacion);
+        mt_formacion.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
 
         Button btn_cargar = findViewById(R.id.btn_guardar);
         btn_cargar.setOnClickListener(this);
@@ -45,13 +57,14 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         String apellidos_alumno = editext_apellidos.getText().toString();
         String telefono_alumno = editext_telefono.getText().toString();
         String email_alumno = editext_email.getText().toString();
-        String formacion = spinner_formacion.getSelectedItem().toString();
+     //   String formacion = spinner_formacion.getSelectedItem().toString();
+        String formacion_alumno = mt_formacion.getText().toString();
 
 
         // listaAlumnos = new ArrayList<Alumno>(); SE CREA UN NUEVO ARRAYLIST Y SIEMPRE TIENE UN OBJETO--MACHACA EL ANTERIOR.
         // if (nombre_alumno.length()>2 && apellidos_alumno.length()>2 && telefono_alumno.length()>=9 && email_alumno.contains("@"))
         if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno)) {
-            new Alumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno, formacion);
+            new Alumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno, formacion_alumno);
 
             listaAlumnos.add(alumno);
             int numAlumnos = listaAlumnos.size();
@@ -61,10 +74,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             editext_apellidos.setText(" ");
             editext_telefono.setText(" ");
             editext_email.setText(" ");
-            spinner_formacion.setSelection(0);//Vuelve a quedar al valor por defecto cada vez que se ingrese un dato sin instalar de nuevo la app
+            mt_formacion.setText("");
+          //  spinner_formacion.setSelection(0);//Vuelve a quedar al valor por defecto cada vez que se ingrese un dato sin instalar de nuevo la app
             editext_nombre.requestFocus();//Volvemos el foco/el cursor al primer elemento del formulario
 
-            Toast.makeText(this, "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " con formación en " + formacion+"."+"\n Total: "+numAlumnos+" registrados", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " con formación en " + formacion_alumno+"."+"\n Total: "+numAlumnos+" registrados", Toast.LENGTH_LONG).show();
         }
 
     }

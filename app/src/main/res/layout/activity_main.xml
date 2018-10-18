@@ -34,7 +34,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         app:barrierDirection="left"
-        app:constraint_referenced_ids="textV_nombre,textV_apellidos,textV_telefono, textV_email"
+        app:constraint_referenced_ids="textV_nombre,textV_apellidos,textV_telefono, textV_email,textV_totalalumnos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent" />
@@ -84,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="74dp" />
+        app:layout_constraintGuide_begin="102dp" />
 
     <EditText
         android:id="@+id/editText_nombre"
@@ -95,10 +95,10 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textV_nombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textV_nombre"
         app:layout_constraintTop_toBottomOf="@+id/textV_titulo" />
 
     <EditText
@@ -109,10 +109,10 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textV_apellidos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textV_apellidos"
         app:layout_constraintTop_toBottomOf="@+id/editText_nombre" />
 
     <EditText
@@ -123,10 +123,10 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="phone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textV_telefono"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textV_telefono"
         app:layout_constraintTop_toBottomOf="@+id/editText_apellidos" />
 
     <EditText
@@ -137,12 +137,11 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textV_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textV_email"
         app:layout_constraintTop_toBottomOf="@+id/editText_telefono" />
-
 
 
     <TextView
@@ -150,11 +149,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:text="Formación"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textV_email" />
-
+    <!--
     <Spinner
         android:id="@+id/spinner_formacion"
         android:layout_width="wrap_content"
@@ -166,30 +165,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+-->
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="217dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:completionHint="Complete datos"
+        android:completionThreshold="1"
+        android:hint="Tus Cursos, Títulos..."
+        app:layout_constraintBaseline_toBaselineOf="@+id/textV_formacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
 
     <TextView
         android:id="@+id/total_alumnos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="24dp"
+        android:layout_height="27dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textV_totalalumnos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_formacion" />
+        app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView" />
 
     <TextView
         android:id="@+id/textV_totalalumnos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="87dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:text="Total alumnos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textV_formacion" />
-
 
 
     <Button
@@ -197,10 +212,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="AÑADIR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/total_alumnos" />
+
+
 </android.support.constraint.ConstraintLayout>
