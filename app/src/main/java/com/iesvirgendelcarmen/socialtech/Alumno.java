@@ -6,27 +6,25 @@ import java.util.List;
 public class Alumno implements Serializable {
     private String nombre;
     private String apellidos;
+    private int edad;
     private String telefono;
     private String email;
     private String formacion;
+    private String provincia;
+
 
 
     public Alumno()  {
     }
 
-    public Alumno(String nombre, String apellidos, String telefono, String email) {
+    public Alumno(String nombre, String apellidos, int edad, String telefono, String email, String formacion, String provincia) {
         this.nombre = nombre;
         this.apellidos = apellidos;
-        this.telefono = telefono;
-        this.email = email;
-    }
-
-    public Alumno(String nombre, String apellidos, String telefono, String email, String formacion) {
-        this.nombre = nombre;
-        this.apellidos = apellidos;
+        this.edad = edad;
         this.telefono = telefono;
         this.email = email;
         this.formacion = formacion;
+        this.provincia = provincia;
     }
 
     public String getNombre() {
@@ -57,6 +55,14 @@ public class Alumno implements Serializable {
         this.telefono = telefono;
     }
 
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -73,7 +79,13 @@ public class Alumno implements Serializable {
         this.formacion = formacion;
     }
 
+    public String getProvincia() {
+        return provincia;
+    }
 
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
 }
 
 

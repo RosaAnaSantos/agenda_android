@@ -7,15 +7,15 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
+import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.*;
 
-public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
+public class MainActivity  extends AppCompatActivity  implements View.OnClickListener{
     private Alumno alumno;
     private int numAlumnos;
     private List<Alumno> listaAlumnos = new ArrayList<Alumno>();
@@ -23,9 +23,12 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     private EditText editext_apellidos;
     private EditText editext_telefono;
     private EditText editext_email;
-   // private Spinner spinner_formacion;
+    private Spinner spinner_provincias;
+    private List<String> provincias;
     private MultiAutoCompleteTextView mt_formacion;
     private TextView totalAlumnos;
+    private SeekBar edad;
+    private TextView valor_edad;
     public static final String KEY_ALUMNO = "Alumno";
     public static final String TOTAL = "TotalAlumnos";
     private Button boton_guardar;
@@ -37,12 +40,37 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         editext_apellidos = findViewById(R.id.editText_apellidos);
         editext_telefono = findViewById(R.id.editText_telefono);
         editext_email = findViewById(R.id.editText_email);
-       // spinner_formacion = findViewById(R.id.spinner_formacion);
+        spinner_provincias = findViewById(R.id.spinner_provincias);
         mt_formacion=findViewById(R.id.multiAutoCompleteTextView);
         totalAlumnos = findViewById(R.id.total_alumnos);
-        boton_guardar = findViewById(R.id.btn_guardar);
 
-        String[] formaciones = getResources().getStringArray(R.array.formacion);
+
+        edad = findViewById(R.id.seekBar);
+        valor_edad = findViewById(R.id.seekbar_valorEdad);
+
+        if (edad!= null) {
+                edad.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                    // Write code to perform some action when progress is changed.
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+                    // Write code to perform some action when touch is started.
+                }
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+                    // Write code to perform some action when touch is stopped.
+                    valor_edad.setText(edad.getProgress()+"");
+                   // Toast.makeText(MainActivity.this, "Current value is " + edad.getProgress(), Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+
+
+        boton_guardar = findViewById(R.id.btn_guardar);
 
         if (savedInstanceState != null) {
             numAlumnos=savedInstanceState.getInt(TOTAL, 0);
@@ -50,15 +78,28 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             totalAlumnos.setText(listaAlumnos.size()+"");
         }
 
-
-
-
-
-
+        //ArrayAdapter MultiAutoCompleteTextView
+        String[] formaciones = getResources().getStringArray(R.array.formacion);
         ArrayAdapter adapterFormacion = new ArrayAdapter(this,
                 android.R.layout.simple_spinner_dropdown_item,formaciones);
         mt_formacion.setAdapter(adapterFormacion);
         mt_formacion.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+
+
+        //ArrayAdapter spinner provincias
+        provincias = new ArrayList<String>();
+        provincias.add("Almería");
+        provincias.add("Cádiz");
+        provincias.add("Córdoba");
+        provincias.add("Granada");
+        provincias.add("Huelva");
+        provincias.add("Jaén");
+        provincias.add("Málaga");
+        provincias.add("Sevilla");
+        ArrayAdapter adapterProvincias = new ArrayAdapter(this,
+                android.R.layout.simple_spinner_dropdown_item,
+                provincias);
+        spinner_provincias.setAdapter(adapterProvincias);
 
         Button btn_cargar = findViewById(R.id.btn_guardar);
         btn_cargar.setOnClickListener(this);
@@ -72,14 +113,15 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         String apellidos_alumno = editext_apellidos.getText().toString();
         String telefono_alumno = editext_telefono.getText().toString();
         String email_alumno = editext_email.getText().toString();
-     //   String formacion = spinner_formacion.getSelectedItem().toString();
+       // String formacion = spinner_formacion.getSelectedItem().toString();
         String formacion_alumno = mt_formacion.getText().toString();
-
+        String provincia = spinner_provincias.getSelectedItem().toString();
+        int edad= Integer.parseInt(valor_edad.getText().toString());
 
         // listaAlumnos = new ArrayList<Alumno>(); SE CREA UN NUEVO ARRAYLIST Y SIEMPRE TIENE UN OBJETO--MACHACA EL ANTERIOR.
         // if (nombre_alumno.length()>2 && apellidos_alumno.length()>2 && telefono_alumno.length()>=9 && email_alumno.contains("@"))
         if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno)) {
-            new Alumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno, formacion_alumno);
+            new Alumno(nombre_alumno, apellidos_alumno, edad, telefono_alumno, email_alumno, formacion_alumno, provincia);
 
             listaAlumnos.add(alumno);
             numAlumnos = listaAlumnos.size();
@@ -91,9 +133,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             editext_email.setText(" ");
             mt_formacion.setText("");
           //  spinner_formacion.setSelection(0);//Vuelve a quedar al valor por defecto cada vez que se ingrese un dato sin instalar de nuevo la app
+            spinner_provincias.setSelection(0);
             editext_nombre.requestFocus();//Volvemos el foco/el cursor al primer elemento del formulario
 
-            Toast.makeText(this, "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " con formación en " + formacion_alumno+"."+"\n Total: "+numAlumnos+" registrados", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Se ha registrado " + nombre_alumno + " " + apellidos_alumno+" de " +edad+" edad y "+ " con formación en " + formacion_alumno + " de la provincia de "+ provincia+"\n Total: "+numAlumnos+" registrados", Toast.LENGTH_LONG).show();
         }
 
     }
