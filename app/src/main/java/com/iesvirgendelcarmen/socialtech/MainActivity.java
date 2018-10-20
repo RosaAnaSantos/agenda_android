@@ -13,17 +13,21 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
     private Alumno alumno;
+    private int numAlumnos;
     private List<Alumno> listaAlumnos = new ArrayList<Alumno>();
     private EditText editext_nombre;
     private EditText editext_apellidos;
     private EditText editext_telefono;
     private EditText editext_email;
    // private Spinner spinner_formacion;
-   private MultiAutoCompleteTextView mt_formacion;
+    private MultiAutoCompleteTextView mt_formacion;
     private TextView totalAlumnos;
+    public static final String KEY_ALUMNO = "Alumno";
+    public static final String TOTAL = "TotalAlumnos";
     private Button boton_guardar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +39,21 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         editext_email = findViewById(R.id.editText_email);
        // spinner_formacion = findViewById(R.id.spinner_formacion);
         mt_formacion=findViewById(R.id.multiAutoCompleteTextView);
-
         totalAlumnos = findViewById(R.id.total_alumnos);
         boton_guardar = findViewById(R.id.btn_guardar);
 
         String[] formaciones = getResources().getStringArray(R.array.formacion);
+
+        if (savedInstanceState != null) {
+            numAlumnos=savedInstanceState.getInt(TOTAL, 0);
+            listaAlumnos = (ArrayList<Alumno>) savedInstanceState.getSerializable(KEY_ALUMNO);
+            totalAlumnos.setText(listaAlumnos.size()+"");
+        }
+
+
+
+
+
 
         ArrayAdapter adapterFormacion = new ArrayAdapter(this,
                 android.R.layout.simple_spinner_dropdown_item,formaciones);
@@ -48,6 +62,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         Button btn_cargar = findViewById(R.id.btn_guardar);
         btn_cargar.setOnClickListener(this);
+
 
     }
 
@@ -67,7 +82,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             new Alumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno, formacion_alumno);
 
             listaAlumnos.add(alumno);
-            int numAlumnos = listaAlumnos.size();
+            numAlumnos = listaAlumnos.size();
             totalAlumnos.setText(numAlumnos + " ");
             //Limpiamos campos en cada ingreso de datos
             editext_nombre.setText(" ");
@@ -104,5 +119,13 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         }
         return false;
     }
+
+      @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putSerializable(KEY_ALUMNO, (ArrayList<Alumno>)listaAlumnos);
+        outState.putInt(TOTAL, listaAlumnos.size());
+    }
+
 
 }

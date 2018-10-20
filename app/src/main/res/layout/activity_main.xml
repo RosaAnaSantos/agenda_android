@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -175,7 +181,7 @@
         android:layout_marginEnd="8dp"
         android:completionHint="Complete datos"
         android:completionThreshold="1"
-        android:hint="Tus Cursos, Títulos..."
+        android:hint="Cursos, Títulos,..."
         app:layout_constraintBaseline_toBaselineOf="@+id/textV_formacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.367"
@@ -185,21 +191,19 @@
     <TextView
         android:id="@+id/total_alumnos"
         android:layout_width="24dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
         android:text="0"
+        android:textAlignment="center"
         app:layout_constraintBaseline_toBaselineOf="@+id/textV_totalalumnos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/textV_totalalumnos"
         app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView" />
 
     <TextView
         android:id="@+id/textV_totalalumnos"
-        android:layout_width="87dp"
-        android:layout_height="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="Total alumnos"
@@ -221,3 +225,4 @@
 
 
 </android.support.constraint.ConstraintLayout>
+</ScrollView>

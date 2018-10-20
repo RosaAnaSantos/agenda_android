@@ -1,5 +1,9 @@
 package com.iesvirgendelcarmen.socialtech;
-public class Alumno  {
+
+import java.io.Serializable;
+import java.util.List;
+
+public class Alumno implements Serializable {
     private String nombre;
     private String apellidos;
     private String telefono;
