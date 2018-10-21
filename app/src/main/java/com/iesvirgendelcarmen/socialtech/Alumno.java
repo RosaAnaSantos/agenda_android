@@ -7,6 +7,7 @@ public class Alumno implements Serializable {
     private String nombre;
     private String apellidos;
     private int edad;
+    private String sexo;
     private String telefono;
     private String email;
     private String formacion;
@@ -21,6 +22,18 @@ public class Alumno implements Serializable {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
+        this.telefono = telefono;
+        this.email = email;
+        this.formacion = formacion;
+        this.provincia = provincia;
+    }
+
+
+    public Alumno(String nombre, String apellidos, int edad, String sexo, String telefono, String email, String formacion, String provincia) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.sexo = sexo;
         this.telefono = telefono;
         this.email = email;
         this.formacion = formacion;
@@ -61,6 +74,14 @@ public class Alumno implements Serializable {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
 
     public String getEmail() {
