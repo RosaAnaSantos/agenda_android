@@ -18,14 +18,14 @@ public class Alumno implements Serializable {
     public Alumno()  {
     }
 
-    public Alumno(String nombre, String apellidos, int edad, String telefono, String email, String formacion, String provincia) {
+    public Alumno(String nombre, String apellidos, int edad, String telefono, String email) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
         this.telefono = telefono;
         this.email = email;
-        this.formacion = formacion;
-        this.provincia = provincia;
+       // this.formacion = formacion;
+       // this.provincia = provincia;
     }
 
 

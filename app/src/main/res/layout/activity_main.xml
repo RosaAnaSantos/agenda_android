@@ -272,6 +272,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textV_spinner_provincias" />
 
         <RadioGroup
+            android:id="@+id/radioGrou"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
