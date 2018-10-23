@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -18,6 +19,7 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
     private Alumno alumno;
     private int numAlumnos;
     private List<Alumno> listaAlumnos = new ArrayList<Alumno>();
+    private List<Alumno> list = new ArrayList<Alumno>();
     private EditText editext_nombre;
     private EditText editext_apellidos;
     private EditText editext_telefono;
@@ -33,8 +35,9 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
     private TextView valor_edad;
     public static final String KEY_ALUMNO = "Alumno";
     public static final String TOTAL = "TotalAlumnos";
+    private AlumnoAdapter alumnoAdapter = new AlumnoAdapter(this, list);
+    private ListView listView;
     private Button boton_guardar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,18 +52,29 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
         totalAlumnos = findViewById(R.id.total_alumnos);
         edad = findViewById(R.id.seekBar);
         valor_edad = findViewById(R.id.seekbar_valorEdad);
+
+
+
+        Alumno a=  new Alumno("Rosa","Santos","micole@gmail.es");
+        list.add(a);
+        Alumno b=  new Alumno("Ana","Gore","ana@gmail.es");
+        list.add(b);
+
+        listView = findViewById(R.id.listView_alumnos);
+        alumnoAdapter = new AlumnoAdapter(this, list);
+        listView.setAdapter(alumnoAdapter);
+
+
         if (edad != null) {
             edad.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                     // Write code to perform some action when progress is changed.
                 }
-
                 @Override
                 public void onStartTrackingTouch(SeekBar seekBar) {
                     // Write code to perform some action when touch is started.
                 }
-
                 @Override
                 public void onStopTrackingTouch(SeekBar seekBar) {
                     // Write code to perform some action when touch is stopped.
@@ -75,7 +89,6 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
             listaAlumnos = (ArrayList<Alumno>) savedInstanceState.getSerializable(KEY_ALUMNO);
             totalAlumnos.setText(listaAlumnos.size() + "");
         }
-
         //ArrayAdapter MultiAutoCompleteTextView
         String[] formaciones = getResources().getStringArray(R.array.formacion);
         ArrayAdapter adapterFormacion = new ArrayAdapter(this,
@@ -96,14 +109,11 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
                 android.R.layout.simple_spinner_dropdown_item,
                 provincias);
         spinner_provincias.setAdapter(adapterProvincias);
-
         Button btn_cargar = findViewById(R.id.btn_guardar);
         btn_cargar.setOnClickListener(this);
     }
-
     @Override
     public void onClick(View v) {
-
         String nombre_alumno = editext_nombre.getText().toString();
         String apellidos_alumno = editext_apellidos.getText().toString();
         String telefono_alumno = editext_telefono.getText().toString();
@@ -114,22 +124,23 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
         radioBotonMasculio = findViewById(R.id.radioButonMasculino);
         String sex = valorSexo(radioGroup);
         if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno,telefono_alumno, email_alumno)) {
-
             if(formacion_alumno.length()==0){
                 formacion_alumno=" ----NO contesta en FORMACIÓN----";
             }
-            new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
 
+            new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
             listaAlumnos.add(alumno);
+            Alumno as=  new Alumno(nombre_alumno, apellidos_alumno, email_alumno);
+            list.add(as);
+            new AlumnoAdapter(this, list);
+            listView.setAdapter(alumnoAdapter);
             numAlumnos = listaAlumnos.size();
             totalAlumnos.setText(numAlumnos + " ");
             limpiarCampos();
-            Toast.makeText(this, "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + sex + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados", Toast.LENGTH_LONG).show();
 
+            Toast.makeText(this, "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + sex + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados", Toast.LENGTH_LONG).show();
         }
     }
-
-
     public boolean comprobarDatosFormularioAlumno(String nombre, String apellidos, String telefono, String email) {
         if (nombre.length() > 2) {
             if (apellidos.length() > 2) {
@@ -154,7 +165,6 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
         }
         return false;
     }
-
     //Volvemos todos los campos del formulario a su valor por defecto
     public void limpiarCampos() {
         editext_nombre.setText(" ");
@@ -168,16 +178,14 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
         radioGroup.clearCheck();
         editext_nombre.requestFocus();
     }
-
-
     //Método que devuelve el valor de RadioButton seleccionado
     public String valorSexo(RadioGroup sexoChico) {
-     int sex=sexoChico.getCheckedRadioButtonId();
-     String sexo;
+        int sex=sexoChico.getCheckedRadioButtonId();
+        String sexo;
         if (sex==R.id.radioButonMasculino) {
-          sexo = "chico";
+            sexo = "chico";
         }
-       else if(sex==R.id.radioButonFemenino){
+        else if(sex==R.id.radioButonFemenino){
             sexo="chica";
         }
         else{
@@ -185,7 +193,6 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
         }
         return sexo;
     }
-
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);

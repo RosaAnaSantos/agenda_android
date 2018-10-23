@@ -24,10 +24,15 @@ public class Alumno implements Serializable {
         this.edad = edad;
         this.telefono = telefono;
         this.email = email;
-       // this.formacion = formacion;
-       // this.provincia = provincia;
+        this.formacion = formacion;
+        this.provincia = provincia;
     }
 
+    public Alumno(String nombre, String apellidos, String email) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.email = email;
+    }
 
     public Alumno(String nombre, String apellidos, int edad, String sexo, String telefono, String email, String formacion, String provincia) {
         this.nombre = nombre;
@@ -106,6 +111,11 @@ public class Alumno implements Serializable {
 
     public void setProvincia(String provincia) {
         this.provincia = provincia;
+    }
+
+    @Override
+    public String toString() {
+        return getNombre() +" "+getApellidos()+" "+getEmail();
     }
 }
 
