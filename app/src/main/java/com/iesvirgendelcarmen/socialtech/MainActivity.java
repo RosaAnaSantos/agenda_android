@@ -19,7 +19,6 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
     private Alumno alumno;
     private int numAlumnos;
     private List<Alumno> listaAlumnos = new ArrayList<Alumno>();
-    private List<Alumno> list = new ArrayList<Alumno>();
     private EditText editext_nombre;
     private EditText editext_apellidos;
     private EditText editext_telefono;
@@ -35,7 +34,7 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
     private TextView valor_edad;
     public static final String KEY_ALUMNO = "Alumno";
     public static final String TOTAL = "TotalAlumnos";
-    private AlumnoAdapter alumnoAdapter = new AlumnoAdapter(this, list);
+    private AlumnoAdapter alumnoAdapter;
     private ListView listView;
     private Button boton_guardar;
     @Override
@@ -56,12 +55,12 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
 
 
         Alumno a=  new Alumno("Rosa","Santos","micole@gmail.es");
-        list.add(a);
+        listaAlumnos.add(a);
         Alumno b=  new Alumno("Ana","Gore","ana@gmail.es");
-        list.add(b);
+        listaAlumnos.add(b);
 
         listView = findViewById(R.id.listView_alumnos);
-        alumnoAdapter = new AlumnoAdapter(this, list);
+        alumnoAdapter = new AlumnoAdapter(this, listaAlumnos);
         listView.setAdapter(alumnoAdapter);
 
 
@@ -128,12 +127,9 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
                 formacion_alumno=" ----NO contesta en FORMACIÓN----";
             }
 
-            new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
-            listaAlumnos.add(alumno);
-            Alumno as=  new Alumno(nombre_alumno, apellidos_alumno, email_alumno);
-            list.add(as);
-            new AlumnoAdapter(this, list);
-            listView.setAdapter(alumnoAdapter);
+          Alumno al=new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
+            listaAlumnos.add(al);
+            alumnoAdapter.notifyDataSetChanged();
             numAlumnos = listaAlumnos.size();
             totalAlumnos.setText(numAlumnos + " ");
             limpiarCampos();
