@@ -73,8 +73,8 @@ public class Alumno implements Serializable {
         this.telefono = telefono;
     }
 
-    public int getEdad() {
-        return edad;
+    public String getEdad() {
+        return edad+"";
     }
 
     public void setEdad(int edad) {

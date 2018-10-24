@@ -10,13 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-          <!--   android:configChanges="orientation|screenSize"> para que no recargue-no se ejecute oncreate()  -->
+
+            <!-- android:configChanges="orientation|screenSize"> para que no recargue-no se ejecute oncreate() -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DetallesActivity"
+            android:label="@string/title_activity_detalles"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

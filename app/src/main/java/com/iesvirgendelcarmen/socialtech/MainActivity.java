@@ -1,7 +1,9 @@
 package com.iesvirgendelcarmen.socialtech;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,7 +35,9 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
     private RadioButton radioBotonFemenino;
     private TextView valor_edad;
     public static final String KEY_ALUMNO = "Alumno";
+    public static final String KEY_LISTA_ALUMNO = "ListaAlumnos";
     public static final String TOTAL = "TotalAlumnos";
+    public static final String NOMBRE = "nombre";
     private AlumnoAdapter alumnoAdapter;
     private ListView listView;
     private Button boton_guardar;
@@ -58,10 +62,25 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
         listaAlumnos.add(a);
         Alumno b=  new Alumno("Ana","Gore","ana@gmail.es");
         listaAlumnos.add(b);
-
         listView = findViewById(R.id.listView_alumnos);
         alumnoAdapter = new AlumnoAdapter(this, listaAlumnos);
         listView.setAdapter(alumnoAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Alumno alumno_position = listaAlumnos.get(position);
+                String nombre=alumno_position.getNombre();
+                irAdetallasActivity( position);
+                Toast toast = Toast.makeText(getApplicationContext(), alumno_position.getNombre(), Toast.LENGTH_SHORT);
+                toast.show();
+
+
+
+
+            }
+        });
+
 
 
         if (edad != null) {
@@ -127,8 +146,8 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
                 formacion_alumno=" ----NO contesta en FORMACIÓN----";
             }
 
-          Alumno al=new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
-            listaAlumnos.add(al);
+          Alumno alumno=new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
+            listaAlumnos.add(alumno);
             alumnoAdapter.notifyDataSetChanged();
             numAlumnos = listaAlumnos.size();
             totalAlumnos.setText(numAlumnos + " ");
@@ -136,6 +155,8 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
 
             Toast.makeText(this, "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + sex + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados", Toast.LENGTH_LONG).show();
         }
+
+
     }
     public boolean comprobarDatosFormularioAlumno(String nombre, String apellidos, String telefono, String email) {
         if (nombre.length() > 2) {
@@ -189,6 +210,20 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
         }
         return sexo;
     }
+
+     public void  irAdetallasActivity(int position){
+         //Creamos un bundle para guardar el objeto alumno
+         Bundle datos = new Bundle();
+         datos.putSerializable(KEY_LISTA_ALUMNO,  listaAlumnos.get(position));
+         //Creamos intent y pasamos el bundle al intent
+         Intent intent = new Intent(this, DetallesActivity.class);
+         intent.putExtras(datos);
+         startActivity(intent);
+
+     }
+
+
+
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
