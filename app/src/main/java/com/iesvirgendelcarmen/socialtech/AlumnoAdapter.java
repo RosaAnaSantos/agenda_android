@@ -5,8 +5,7 @@ import android.content.Context;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.BaseAdapter;
-        import android.widget.ImageView;
-        import android.widget.TextView;
+import android.widget.TextView;
         import java.util.List;
 public class AlumnoAdapter extends BaseAdapter {
     private Context context;
@@ -31,7 +30,7 @@ public class AlumnoAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             convertView = LayoutInflater.from(context).
-                    inflate(R.layout.alumnos, parent, false);
+                    inflate(R.layout.alumnos_diseno_sin_fragment_java, parent, false);
         }
         Alumno alumno = list.get(position);
         TextView nombre = convertView.findViewById(R.id.textViewNombre);

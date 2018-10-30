@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetallesActivity"
+            android:name=".DetallesAlumnoFragment"
             android:label="@string/title_activity_detalles"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

@@ -1,27 +1,27 @@
 package com.iesvirgendelcarmen.socialtech;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class DetallesActivity extends AppCompatActivity {
-
+public class DetallesAlumnoFragment extends Fragment {
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalles);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle  savedInstanceState) {
+        return inflater.inflate(R.layout.detalles_alumno, container, false);
 
-       //Rescatamos el bundle
+       /* //Rescatamos el bundle
         Bundle datos = getIntent().getExtras();
         Alumno alumno = (Alumno) datos.getSerializable(MainActivity.KEY_LISTA_ALUMNO);
         //Seteamos los valores de los campos a mostrar
         TextView tv_nombr = findViewById(R.id.tvNombre);
         tv_nombr.setText(alumno.getNombre());
-
         TextView tv_apellido=findViewById(R.id.tvApellidos);
         tv_apellido.setText(alumno.getApellidos());
 
@@ -42,7 +42,7 @@ public class DetallesActivity extends AppCompatActivity {
 
         TextView tv_sex=findViewById(R.id.tvSexo);
         tv_sex.setText(alumno.getSexo());
-
+*/
     }
 
 }

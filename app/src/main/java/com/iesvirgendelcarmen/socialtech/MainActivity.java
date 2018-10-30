@@ -1,5 +1,8 @@
 package com.iesvirgendelcarmen.socialtech;
 import android.content.Intent;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
-public class MainActivity  extends AppCompatActivity  implements View.OnClickListener {
+public class MainActivity  extends AppCompatActivity{
     private Alumno alumno;
     private int numAlumnos;
     private List<Alumno> listaAlumnos = new ArrayList<Alumno>();
@@ -41,10 +44,19 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
     private AlumnoAdapter alumnoAdapter;
     private ListView listView;
     private Button boton_guardar;
+    private FormularioAlumnosFragment formularioAlumnos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FragmentManager FM=getSupportFragmentManager();
+        FragmentTransaction FT=FM.beginTransaction();
+        FormularioAlumnosFragment fragmentFormulario=new FormularioAlumnosFragment();
+        FT.add(R.id.contenedor, fragmentFormulario);
+        FT.commit();
+
+        /*
         editext_nombre = findViewById(R.id.editText_nombre);
         editext_apellidos = findViewById(R.id.editText_apellidos);
         editext_telefono = findViewById(R.id.editText_telefono);
@@ -129,7 +141,12 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
         spinner_provincias.setAdapter(adapterProvincias);
         Button btn_cargar = findViewById(R.id.btn_guardar);
         btn_cargar.setOnClickListener(this);
+
+
+*/
     }
+
+    /*
     @Override
     public void onClick(View v) {
         String nombre_alumno = editext_nombre.getText().toString();
@@ -158,6 +175,19 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
 
 
     }
+
+    private void inicialize(){
+        formularioAlumnos = new FormularioAlumnosFragment();
+        reemplazarFragmentoPrincipal(formularioAlumnos);
+        getFragmentManager().beginTransaction().add(R.id.contenedor, formularioAlumnos).commit();
+    }
+
+    public void reemplazarFragmentoPrincipal(Fragment fragmento){
+        getFragmentManager().beginTransaction().replace(R.id.contenedor, fragmento).commit();
+    }
+
+
+
     public boolean comprobarDatosFormularioAlumno(String nombre, String apellidos, String telefono, String email) {
         if (nombre.length() > 2) {
             if (apellidos.length() > 2) {
@@ -216,7 +246,7 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
          Bundle datos = new Bundle();
          datos.putSerializable(KEY_LISTA_ALUMNO,  listaAlumnos.get(position));
          //Creamos intent y pasamos el bundle al intent
-         Intent intent = new Intent(this, DetallesActivity.class);
+         Intent intent = new Intent(this, DetallesAlumnoFragment.class);
          intent.putExtras(datos);
          startActivity(intent);
 
@@ -229,5 +259,16 @@ public class MainActivity  extends AppCompatActivity  implements View.OnClickLis
         super.onSaveInstanceState(outState);
         outState.putSerializable(KEY_ALUMNO, (ArrayList<Alumno>) listaAlumnos);
         outState.putInt(TOTAL, listaAlumnos.size());
+    }
+
+    */
+
+    public void cambiarFragmentoEnPrincipal(Fragment fragmento){
+        FragmentManager FM=getSupportFragmentManager();
+        FragmentTransaction FT=FM.beginTransaction();
+        FormularioAlumnosFragment fragmentFormulario=new FormularioAlumnosFragment();
+        FT.replace(R.id.contenedor, fragmento);
+        FT.commit();
+
     }
 }

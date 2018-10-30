@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textV_informacion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Pulse sobre el alumno seleccionado para ver su registro completo"
+        android:textAlignment="center"
+        android:textColor="#484f89"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ver_formulario"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ListView
+        android:id="@+id/listView_alumnos"
+        android:layout_width="312dp"
+        android:layout_height="404dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#484f89"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textV_informacion">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_ver_formulario"
+        android:layout_width="333dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="VOLVER AL FORMULARIO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
