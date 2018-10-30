@@ -19,6 +19,40 @@ public class AlumnosRegistradosFragment extends Fragment {
 
     }
 
+
+    /*
+      Alumno a=  new Alumno("Rosa","Santos","micole@gmail.es");
+        listaAlumnos.add(a);
+        Alumno b=  new Alumno("Ana","Gore","ana@gmail.es");
+        listaAlumnos.add(b);
+        ListView listView = vista.findViewById(R.id.listView_alumnos);
+        AlumnoAdapter alumnoAdapter = new AlumnoAdapter(getActivity(), listaAlumnos);
+        listView.setAdapter(alumnoAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Alumno alumno_position = listaAlumnos.get(position);
+                String nombre=alumno_position.getNombre();
+                irAdetallasActivity( position);
+                Toast toast = Toast.makeText(getActivity(), alumno_position.getNombre(), Toast.LENGTH_SHORT);
+                toast.show();
+
+
+
+
+            }
+        });
+
+
+
+
+
+
+
+
+    */
+
     @Override
     public void onResume() {
         super.onResume();
