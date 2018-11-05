@@ -24,6 +24,7 @@ public class MainActivity  extends AppCompatActivity{
     private Alumno alumno;
     private int numAlumnos;
     private List<Alumno> listaAlumnos = new ArrayList<Alumno>();
+    private  FormularioAlumnosFragment formularioAlumnosFragment= new FormularioAlumnosFragment();
     private EditText editext_nombre;
     private EditText editext_apellidos;
     private EditText editext_telefono;
