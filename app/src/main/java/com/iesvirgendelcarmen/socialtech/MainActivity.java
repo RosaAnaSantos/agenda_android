@@ -57,12 +57,25 @@ public class MainActivity  extends AppCompatActivity{
         FT.commit();
 
     }
-    public void cambiarFragmentoEnPrincipal(Fragment fragmento){
+    public void cambiarFragmento(Fragment fragmento){
         FragmentManager FM=getSupportFragmentManager();
         FragmentTransaction FT=FM.beginTransaction();
-        FormularioAlumnosFragment fragmentFormulario=new FormularioAlumnosFragment();
+      //  FormularioRefact formularioRefact=new FormularioRefact();
+     //   FormularioAlumnosFragment fragmentFormulario=new FormularioAlumnosFragment();
         FT.replace(R.id.contenedor, fragmento);
         FT.commit();
 
     }
+
+    public List<Alumno> getListaAlumnos() {
+        return listaAlumnos;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putSerializable(KEY_ALUMNO, (ArrayList<Alumno>) listaAlumnos);
+        outState.putInt(TOTAL, listaAlumnos.size());
+    }
+
 }
