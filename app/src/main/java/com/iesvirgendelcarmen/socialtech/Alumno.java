@@ -12,10 +12,23 @@ public class Alumno implements Serializable {
     private String email;
     private String formacion;
     private String provincia;
+    private int foto=2;
 
 
 
     public Alumno()  {
+    }
+
+    public Alumno(String nombre, String apellidos, int edad, String sexo, String telefono, String email, String formacion, String provincia, int foto) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.telefono = telefono;
+        this.email = email;
+        this.formacion = formacion;
+        this.provincia = provincia;
+        this.foto = foto;
     }
 
     public Alumno(String nombre, String apellidos, int edad, String telefono, String email) {
@@ -113,9 +126,17 @@ public class Alumno implements Serializable {
         this.provincia = provincia;
     }
 
+    public int getFoto() {
+        return foto;
+    }
+
+    public void setFoto(int foto) {
+        this.foto = foto;
+    }
+
     @Override
     public String toString() {
-        return getNombre() +" "+getApellidos()+" "+getEmail();
+        return getNombre() +" "+getApellidos()+" "+getTelefono()+" "+getEmail();
     }
 }
 

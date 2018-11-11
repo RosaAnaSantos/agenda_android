@@ -5,6 +5,7 @@ import android.content.Context;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
         import java.util.List;
 public class AlumnoAdapter extends BaseAdapter {
@@ -35,10 +36,18 @@ public class AlumnoAdapter extends BaseAdapter {
         Alumno alumno = list.get(position);
         TextView nombre = convertView.findViewById(R.id.textViewNombre);
         TextView apellidos = convertView.findViewById(R.id.textViewApellidos);
+        TextView telefono=convertView.findViewById(R.id.textViewTelefono);
         TextView email = convertView.findViewById(R.id.textViewEmail);
+      //  ImageView foto= convertView.findViewById(R.id.listView_foto);
+
         nombre.setText(alumno.getNombre());
         apellidos.setText(alumno.getApellidos());
+        telefono.setText(alumno.getTelefono());
         email.setText(alumno.getEmail());
+      //  foto.setImageResource(alumno.getFoto());
+
+
+
         return convertView;
     }
 }
