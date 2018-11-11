@@ -145,7 +145,7 @@ public class FormularioAlumnosFragment extends Fragment {
                     listaAlumnos.add(alumno);
                     numAlumnos = listaAlumnos.size();
                     totalAlumnos.setText(numAlumnos + " ");
-                    //limpiarCampos();
+                    limpiarCampos();
 
                     Toast.makeText(getActivity(), "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados", Toast.LENGTH_LONG).show();
 

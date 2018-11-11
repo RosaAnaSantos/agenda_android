@@ -14,7 +14,8 @@
         android:layout_weight="1"
         android:layout_width="0dp"
         android:adjustViewBounds="true"
-        android:layout_height="80dp" />
+        android:layout_height="95dp"
+        android:layout_marginRight="6dp"/>
 
 
 <LinearLayout
@@ -27,7 +28,8 @@
   <LinearLayout
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:orientation="horizontal">
+      android:orientation="horizontal"
+      android:layout_marginLeft="10dp">
 
     <TextView
         android:id="@+id/textViewNombre"
@@ -55,7 +57,7 @@
         android:layout_height="wrap_content"
         android:text="Apellidos"
         android:textStyle="bold"
-        android:layout_marginLeft="5dp"/>
+        android:layout_marginLeft="10dp"/>
 
     <TextView
         android:id="@+id/textViewEmail"
@@ -63,7 +65,8 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="Email"
-        android:layout_marginLeft="5dp"/>
+
+        android:layout_marginLeft="10dp"/>
 
 </LinearLayout>
 

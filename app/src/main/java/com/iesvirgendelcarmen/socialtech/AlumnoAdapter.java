@@ -1,7 +1,8 @@
 package com.iesvirgendelcarmen.socialtech;
 
 import android.content.Context;
-        import android.view.LayoutInflater;
+import android.media.Image;
+import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.BaseAdapter;
@@ -38,13 +39,13 @@ public class AlumnoAdapter extends BaseAdapter {
         TextView apellidos = convertView.findViewById(R.id.textViewApellidos);
         TextView telefono=convertView.findViewById(R.id.textViewTelefono);
         TextView email = convertView.findViewById(R.id.textViewEmail);
-      //  ImageView foto= convertView.findViewById(R.id.listView_foto);
+        ImageView foto= convertView.findViewById(R.id.listView_foto);
 
         nombre.setText(alumno.getNombre());
         apellidos.setText(alumno.getApellidos());
         telefono.setText(alumno.getTelefono());
         email.setText(alumno.getEmail());
-      //  foto.setImageResource(alumno.getFoto());
+        foto.setImageResource(R.drawable.foto);
 
 
 
