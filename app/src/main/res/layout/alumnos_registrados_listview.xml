@@ -8,18 +8,21 @@
 
     <TextView
         android:id="@+id/textV_informacion"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="354dp"
+        android:layout_height="24dp"
         android:layout_gravity="center"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Pulse sobre el alumno seleccionado para ver su registro completo"
+        android:layout_marginEnd="8dp"
+        android:text="Seleccione alumno para ver registro completo"
         android:textAlignment="center"
         android:textColor="#484f89"
         android:textSize="14sp"
         android:textStyle="bold"
         android:typeface="serif"
-        app:layout_constraintTop_toBottomOf="@+id/btn_ver_formulario"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ver_formulario" />
 
     <ListView
         android:id="@+id/listView_alumnos"
@@ -30,7 +33,6 @@
         android:layout_marginEnd="8dp"
         android:textColor="#484f89"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textV_informacion">

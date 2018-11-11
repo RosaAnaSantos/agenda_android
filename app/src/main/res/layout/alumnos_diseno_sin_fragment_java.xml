@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@color/colorAccent">
+    android:background="#cecc8b">
 
 
     <TextView
@@ -14,7 +14,7 @@
         android:textStyle="bold"
         android:layout_height="wrap_content"
         android:text="Nombre"
-        android:layout_marginLeft="3dp"/>
+        android:layout_marginLeft="3dp" />
 
     <TextView
         android:id="@+id/textViewApellidos"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Apellidos"
         android:textStyle="bold"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginLeft="5dp"/>
 
     <TextView
         android:id="@+id/textViewEmail"
@@ -32,6 +32,6 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:text="Email"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginLeft="5dp"/>
 
 </LinearLayout>

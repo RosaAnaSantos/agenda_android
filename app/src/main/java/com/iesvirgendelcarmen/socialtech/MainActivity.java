@@ -20,7 +20,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity  extends AppCompatActivity{
+public class MainActivity  extends AppCompatActivity implements AlumnosRegistradosFragment.OnEventoSeleccionado {
     private Alumno alumno;
     private int numAlumnos;
     private List<Alumno> listaAlumnos = new ArrayList<Alumno>();
@@ -46,6 +46,7 @@ public class MainActivity  extends AppCompatActivity{
     private ListView listView;
     private Button boton_guardar;
     private FormularioAlumnosFragment formularioAlumnos;
+    private DetallesAlumnoFragment detallesAlumnoFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,11 +62,17 @@ public class MainActivity  extends AppCompatActivity{
     public void cambiarFragmento(Fragment fragmento){
         FragmentManager FM=getSupportFragmentManager();
         FragmentTransaction FT=FM.beginTransaction();
-      //  FormularioRefact formularioRefact=new FormularioRefact();
-     //   FormularioAlumnosFragment fragmentFormulario=new FormularioAlumnosFragment();
         FT.replace(R.id.contenedor, fragmento);
         FT.commit();
 
+    }
+
+   public void eventoSeleccionado(Alumno alumno){
+     DetallesAlumnoFragment detallesAlumnoFragment=new DetallesAlumnoFragment();
+     Bundle bundle =new Bundle();
+     bundle.putSerializable("EVENTO", alumno);
+     detallesAlumnoFragment.setArguments(bundle);
+     cambiarFragmento(detallesAlumnoFragment);
     }
 
     public List<Alumno> getListaAlumnos() {

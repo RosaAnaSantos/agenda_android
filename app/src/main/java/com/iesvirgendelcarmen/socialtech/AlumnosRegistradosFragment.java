@@ -1,5 +1,6 @@
 package com.iesvirgendelcarmen.socialtech;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -35,6 +36,15 @@ public class AlumnosRegistradosFragment extends Fragment {
     FormularioAlumnosFragment formularioAlumnosFragment;
     AlumnosRegistradosFragment alumnosRegistradosFragment;
     private Button volver_a_formulario;
+    private OnEventoSeleccionado callback;
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        this.callback=(OnEventoSeleccionado)context;
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -50,7 +60,8 @@ public class AlumnosRegistradosFragment extends Fragment {
 
 
         public void anadeListView(View view) {
-            ListView listView = view.findViewById(R.id.listView_alumnos);
+            final ListView listView = view.findViewById(R.id.listView_alumnos);
+            listaAlumnos=new ArrayList<Alumno>();
             listaAlumnos = ((MainActivity)getActivity()).getListaAlumnos();
             AlumnoAdapter alumnoAdapter = new AlumnoAdapter(getActivity(), listaAlumnos);
             listView.setAdapter(alumnoAdapter);
@@ -59,6 +70,7 @@ public class AlumnosRegistradosFragment extends Fragment {
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    callback.eventoSeleccionado(listaAlumnos.get(position));
 
                 }
             });
@@ -78,7 +90,9 @@ public class AlumnosRegistradosFragment extends Fragment {
         });
     }
 
-
+    public interface  OnEventoSeleccionado{
+        public void eventoSeleccionado(Alumno alumno);
+    }
 
 }
 
