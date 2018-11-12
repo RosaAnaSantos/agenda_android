@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">SocialTech</string>
     <string name="title_activity_detalles">DetallesActivity</string>
+    <string name="formularioRegistro">Insertar Alumno</string>
+    <string name="alumnosRegistrados">Alumnos Registrados</string>
 </resources>

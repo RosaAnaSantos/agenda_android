@@ -1,13 +1,10 @@
 package com.iesvirgendelcarmen.socialtech;
-import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -17,6 +14,9 @@ import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.view.MenuItem;
+import android.view.Menu;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,20 +45,30 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
     private AlumnoAdapter alumnoAdapter;
     private ListView listView;
     private Button boton_guardar;
-    private FormularioAlumnosFragment formularioAlumnos;
     private DetallesAlumnoFragment detallesAlumnoFragment;
+    private FormularioAlumnosFragment fragmentFormulario = new FormularioAlumnosFragment();
+    private AlumnosRegistradosFragment alumnosRegistradosFragment = new AlumnosRegistradosFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        //Toolbar como ActionBar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         FragmentManager FM = getSupportFragmentManager();
         FragmentTransaction FT = FM.beginTransaction();
-        FormularioAlumnosFragment fragmentFormulario = new FormularioAlumnosFragment();
         FT.add(R.id.contenedor, fragmentFormulario);
         FT.commit();
 
     }
+
+
     public void cambiarFragmento(Fragment fragmento){
         FragmentManager FM=getSupportFragmentManager();
         FragmentTransaction FT=FM.beginTransaction();
@@ -74,6 +84,27 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
      detallesAlumnoFragment.setArguments(bundle);
      cambiarFragmento(detallesAlumnoFragment);
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_formulario:
+                cambiarFragmento(fragmentFormulario);
+                return true;
+            case R.id.menu_alumnos_registrados:
+                cambiarFragmento(alumnosRegistradosFragment);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
 
     public List<Alumno> getListaAlumnos() {
         return listaAlumnos;
