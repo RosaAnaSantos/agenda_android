@@ -94,6 +94,7 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+
             case R.id.menu_formulario:
                 cambiarFragmento(fragmentFormulario);
                 return true;
@@ -101,6 +102,7 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
                 cambiarFragmento(alumnosRegistradosFragment);
                 return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 

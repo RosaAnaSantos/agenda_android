@@ -9,6 +9,3 @@
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
     app:title="@string/app_name"
     android:elevation="4dp"/>
-
-
-
