@@ -48,6 +48,8 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
     private DetallesAlumnoFragment detallesAlumnoFragment;
     private FormularioAlumnosFragment fragmentFormulario = new FormularioAlumnosFragment();
     private AlumnosRegistradosFragment alumnosRegistradosFragment = new AlumnosRegistradosFragment();
+    private FormularioEditar formularioEditar=new FormularioEditar();
+    int valor=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +77,7 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
         FT.replace(R.id.contenedor, fragmento);
         FT.commit();
 
+
     }
 
    public void eventoSeleccionado(Alumno alumno){
@@ -84,6 +87,8 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
      detallesAlumnoFragment.setArguments(bundle);
      cambiarFragmento(detallesAlumnoFragment);
     }
+
+
 
 
     @Override

@@ -40,11 +40,16 @@ public class AlumnosRegistradosFragment extends Fragment {
     private Button volver_a_formulario;
     private OnEventoSeleccionado callback;
     private AlumnoAdapter alumnoAdapter;
+    private int itenSeleccionado;
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         this.callback = (OnEventoSeleccionado) context;
+
     }
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -52,6 +57,13 @@ public class AlumnosRegistradosFragment extends Fragment {
         anadeListView(vista);
         volverAlFormulario(vista);
         return vista;
+
+
+
+
+
+
+
     }
     public void anadeListView(View view) {
         ListView listView = view.findViewById(R.id.listView_alumnos);
@@ -65,6 +77,10 @@ public class AlumnosRegistradosFragment extends Fragment {
                 callback.eventoSeleccionado(listaAlumnos.get(position));
             }
         });
+
+
+
+
         registerForContextMenu(listView);
     }
     private void volverAlFormulario(View vista) {
@@ -79,6 +95,11 @@ public class AlumnosRegistradosFragment extends Fragment {
     public interface OnEventoSeleccionado {
         public void eventoSeleccionado(Alumno alumno);
     }
+
+
+
+
+
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         getActivity().getMenuInflater().inflate(R.menu.menu_lista_alumnos, menu);
@@ -97,10 +118,10 @@ public class AlumnosRegistradosFragment extends Fragment {
                 dialogoContacto.setCancelable(false);
 
                 dialogoContacto.setPositiveButton("SI" +
-                        "",new DialogInterface.OnClickListener(){
+                        "", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        AdapterView.AdapterContextMenuInfo infor = (AdapterView.AdapterContextMenuInfo)item.getMenuInfo();
+                        AdapterView.AdapterContextMenuInfo infor = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
                         listaAlumnos.remove(listaAlumnos.get(infor.position));
                         alumnoAdapter.notifyDataSetChanged();
 
@@ -116,9 +137,27 @@ public class AlumnosRegistradosFragment extends Fragment {
                 });
 
                 dialogoContacto.show();
+                return true;
+
+            case R.id.editar_alumno:
+                AdapterView.AdapterContextMenuInfo inf = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+                ((MainActivity) getActivity()).cambiarFragmento(new FormularioEditar());
+
+               ((MainActivity) getActivity()).valor=inf.position;
+
+                  Toast.makeText(getContext(), (inf.position)+"", Toast.LENGTH_SHORT).show();
+               Toast.makeText(getContext(),  ((MainActivity) getActivity()).valor+"---", Toast.LENGTH_SHORT).show();
+                return  true;
+
         }
 
         return super.onContextItemSelected(item);
     }
+
+
+
+
 }
+
+
 

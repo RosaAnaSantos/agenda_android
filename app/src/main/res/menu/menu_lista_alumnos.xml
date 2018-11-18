@@ -7,4 +7,7 @@
     <item
         android:id="@+id/eliminar_alumno"
         android:title="Eliminar alumno" />
+    <item
+        android:id="@+id/editar_alumno"
+        android:title="Editar alumno" />
 </menu>
