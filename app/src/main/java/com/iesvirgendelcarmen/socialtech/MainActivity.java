@@ -1,10 +1,12 @@
 package com.iesvirgendelcarmen.socialtech;
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -16,48 +18,38 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.view.MenuItem;
 import android.view.Menu;
-
+import butterknife.BindView;
+import butterknife.OnClick;
+import butterknife.OnItemClick;
+import butterknife.ButterKnife;
 import java.util.ArrayList;
 import java.util.List;
+import butterknife.ButterKnife;
 
 public class MainActivity  extends AppCompatActivity implements AlumnosRegistradosFragment.OnEventoSeleccionado {
     private Alumno alumno;
-    private int numAlumnos;
     private List<Alumno> listaAlumnos = new ArrayList<Alumno>();
-    private  FormularioAlumnosFragment formularioAlumnosFragment= new FormularioAlumnosFragment();
-    private EditText editext_nombre;
-    private EditText editext_apellidos;
-    private EditText editext_telefono;
-    private EditText editext_email;
-    private Spinner spinner_provincias;
-    private List<String> provincias;
-    private MultiAutoCompleteTextView mt_formacion;
-    private TextView totalAlumnos;
-    private SeekBar edad;
-    private RadioGroup radioGroup;
-    private RadioButton radioBotonMasculio;
-    private RadioButton radioBotonFemenino;
-    private TextView valor_edad;
+    private FormularioAlumnosFragment formularioAlumnosFragment = new FormularioAlumnosFragment();
     public static final String KEY_ALUMNO = "Alumno";
     public static final String KEY_LISTA_ALUMNO = "ListaAlumnos";
     public static final String TOTAL = "TotalAlumnos";
     public static final String NOMBRE = "nombre";
-    private AlumnoAdapter alumnoAdapter;
-    private ListView listView;
-    private Button boton_guardar;
     private DetallesAlumnoFragment detallesAlumnoFragment;
     private FormularioAlumnosFragment fragmentFormulario = new FormularioAlumnosFragment();
     private AlumnosRegistradosFragment alumnosRegistradosFragment = new AlumnosRegistradosFragment();
-    private FormularioEditar formularioEditar=new FormularioEditar();
-    int valor=0;
+    private FormularioEditar formularioEditar = new FormularioEditar();
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+    int valor = 0;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
 
-        //Toolbar como ActionBar
-        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -71,24 +63,22 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
     }
 
 
-    public void cambiarFragmento(Fragment fragmento){
-        FragmentManager FM=getSupportFragmentManager();
-        FragmentTransaction FT=FM.beginTransaction();
+    public void cambiarFragmento(Fragment fragmento) {
+        FragmentManager FM = getSupportFragmentManager();
+        FragmentTransaction FT = FM.beginTransaction();
         FT.replace(R.id.contenedor, fragmento);
         FT.commit();
 
 
     }
 
-   public void eventoSeleccionado(Alumno alumno){
-     DetallesAlumnoFragment detallesAlumnoFragment=new DetallesAlumnoFragment();
-     Bundle bundle =new Bundle();
-     bundle.putSerializable("EVENTO", alumno);
-     detallesAlumnoFragment.setArguments(bundle);
-     cambiarFragmento(detallesAlumnoFragment);
+    public void eventoSeleccionado(Alumno alumno) {
+        DetallesAlumnoFragment detallesAlumnoFragment = new DetallesAlumnoFragment();
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("EVENTO", alumno);
+        detallesAlumnoFragment.setArguments(bundle);
+        cambiarFragmento(detallesAlumnoFragment);
     }
-
-
 
 
     @Override
@@ -96,6 +86,7 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
         getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -110,7 +101,6 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
 
         return super.onOptionsItemSelected(item);
     }
-
 
 
     public List<Alumno> getListaAlumnos() {

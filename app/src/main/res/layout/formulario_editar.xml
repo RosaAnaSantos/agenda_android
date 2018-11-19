@@ -86,7 +86,7 @@
                 app:layout_constraintGuide_begin="102dp" />
 
             <EditText
-                android:id="@+id/editText_nombre"
+                android:id="@+id/editText_nombr"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginStart="8dp"
@@ -101,7 +101,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textV_titulo" />
 
             <EditText
-                android:id="@+id/editText_apellidos"
+                android:id="@+id/editText_apellido"
                 android:layout_width="wrap_content"
                 android:layout_height="46dp"
                 android:layout_marginStart="8dp"
@@ -115,7 +115,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText_nombre" />
 
             <EditText
-                android:id="@+id/editText_telefono"
+                android:id="@+id/editText_telefon"
                 android:layout_width="wrap_content"
                 android:layout_height="46dp"
                 android:layout_marginStart="8dp"
@@ -129,7 +129,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText_apellidos" />
 
             <EditText
-                android:id="@+id/editText_email"
+                android:id="@+id/editText_emai"
                 android:layout_width="wrap_content"
                 android:layout_height="46dp"
                 android:layout_marginStart="8dp"

@@ -1,5 +1,4 @@
 package com.iesvirgendelcarmen.socialtech;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -19,34 +18,35 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 
 
 public class FormularioEditar extends Fragment {
 
+    @BindView(R.id.editText_nombr) EditText editext_nombre;
+    @BindView(R.id.editText_apellido) EditText editext_apellidos;
+    @BindView(R.id.editText_telefon) EditText editext_telefono;
+    @BindView(R.id.editText_emai) EditText editext_email;
+    @BindView(R.id.spinner_provincias) Spinner spinner_provincias;
+    @BindView(R.id.multiAutoCompleteTextView)MultiAutoCompleteTextView mt_formacion;
+    @BindView(R.id.seekBar) SeekBar edad;
+    @BindView(R.id.radioGrou) RadioGroup radioGroup;
+    @BindView(R.id.radioButonMasculino) RadioButton radioBotonMasculio;
+    @BindView(R.id.radioButonFemenino) RadioButton radioBotonFemenino;
+    @BindView(R.id.seekbar_valorEdad) TextView valor_edad;
     private Alumno alumno;
     private int numAlumnos;
-    private EditText editext_nombre;
-    private EditText editext_apellidos;
-    private EditText editext_telefono;
-    private EditText editext_email;
-    private Spinner spinner_provincias;
     private List<String> provincias;
-    private MultiAutoCompleteTextView mt_formacion;
-    private SeekBar edad;
-    private RadioGroup radioGroup;
-    private RadioButton radioBotonMasculio;
-    private RadioButton radioBotonFemenino;
-    private TextView valor_edad;
     public static final String KEY_ALUMNO = "Alumno";
     public static final String EVENTO = "ListaAlumnos";
     public static final String NOMBRE = "nombre";
     private ListView listView;
-    private Button boton_guardar;
-    FormularioEditar formularioEditar;
-    Button boton_ver_alumnos;
+    private List<Alumno> listaAlumnos;
     private AlumnosRegistradosFragment alumnosRegistradosFragment;
     private AlumnosRegistradosFragment.OnEventoSeleccionado callback;
 
@@ -62,8 +62,7 @@ public class FormularioEditar extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View vista = inflater.inflate(R.layout.formulario_editar, container, false);
-
-
+        ButterKnife.bind(this, vista);
 
         List<Alumno>  listaAlumnos = new ArrayList<Alumno>();
         listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
@@ -71,33 +70,15 @@ public class FormularioEditar extends Fragment {
         AlumnoAdapter alumnoAdapter = new AlumnoAdapter(getActivity(), listaAlumnos);
 
 
-        editext_nombre = vista.findViewById(R.id.editText_nombre);
         editext_nombre.setText(alumno.getNombre());
-
-        editext_apellidos = vista.findViewById(R.id.editText_apellidos);
         editext_apellidos.setText(alumno.getApellidos());
-
-        editext_telefono = vista.findViewById(R.id.editText_telefono);
         editext_telefono.setText(alumno.getTelefono());
-
-        editext_email = vista.findViewById(R.id.editText_email);
         editext_email.setText(alumno.getEmail());
-
-        spinner_provincias = vista.findViewById(R.id.spinner_provincias);
         spinner_provincias.setSelection(seleccionProvincia(alumno));
-
-        mt_formacion = vista.findViewById(R.id.multiAutoCompleteTextView);
         mt_formacion.setText(alumno.getFormacion());
-
         radioGroup = vista.findViewById(R.id.radioGrou);
-
-
-        edad = vista.findViewById(R.id.seekBar);
-        valor_edad = vista.findViewById(R.id.seekbar_valorEdad);
         valor_edad.setText(alumno.getEdad());
 
-        radioBotonMasculio = vista.findViewById(R.id.radioButonMasculino);
-        radioBotonFemenino=vista.findViewById(R.id.radioButonFemenino);
         mostrarSexo(alumno);
 
 
@@ -117,7 +98,7 @@ public class FormularioEditar extends Fragment {
                 @Override
                 public void onStopTrackingTouch(SeekBar seekBar) {
                     // Write code to perform some action when touch is stopped.
-                       valor_edad.setText(edad.getProgress() + "");
+                    valor_edad.setText(edad.getProgress() + "");
                     // Toast.makeText(MainActivity.this, "Current value is " + edad.getProgress(), Toast.LENGTH_SHORT).show();
                 }
             });
@@ -144,43 +125,40 @@ public class FormularioEditar extends Fragment {
         spinner_provincias.setSelection(seleccionProvincia(alumno));
 
 
-        Button btn_modificar = vista.findViewById(R.id.btn_modificar_alumno);
-        btn_modificar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String nombre_alumno = editext_nombre.getText().toString();
-                String apellidos_alumno = editext_apellidos.getText().toString();
-                String telefono_alumno = editext_telefono.getText().toString();
-                String email_alumno = editext_email.getText().toString();
-                String formacion_alumno = mt_formacion.getText().toString();
-                String provincia = spinner_provincias.getSelectedItem().toString();
-                int edad = Integer.parseInt(valor_edad.getText().toString());
-                String sex = valorSexo(radioGroup);
-                if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno)) {
-                    if (formacion_alumno.length() == 0) {
-                        formacion_alumno = " ----NO contesta en FORMACIÓN----";
-                    }
-
-                    Alumno alumno = new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
-
-                    List<Alumno> listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
-                    listaAlumnos.set(((MainActivity) getActivity()).valor, alumno);
-
-
-
-                    Toast.makeText(getActivity(), "Se ha modificado corectamente " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados", Toast.LENGTH_LONG).show();
-
-
-                }
-
-            }
-        });//cierre onclick
-
-
-
-
         return vista;
     }
+
+
+    @OnClick(R.id.btn_modificar_alumno)
+    public void submit(){
+        String nombre_alumno = editext_nombre.getText().toString();
+        String apellidos_alumno = editext_apellidos.getText().toString();
+        String telefono_alumno = editext_telefono.getText().toString();
+        String email_alumno = editext_email.getText().toString();
+        String formacion_alumno = mt_formacion.getText().toString();
+        String provincia = spinner_provincias.getSelectedItem().toString();
+        int edad = Integer.parseInt(valor_edad.getText().toString());
+        String sex = valorSexo(radioGroup);
+        if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno)) {
+            if (formacion_alumno.length() == 0) {
+                formacion_alumno = " ----NO contesta en FORMACIÓN----";
+            }
+
+            alumno = new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
+            listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
+            listaAlumnos.set(((MainActivity) getActivity()).valor, alumno);
+
+
+
+            Toast.makeText(getActivity(), "Se ha modificado corectamente " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados", Toast.LENGTH_LONG).show();
+
+
+        }
+
+    }
+
+
+
     public int seleccionProvincia(Alumno alumno){
         int s=0;
         if(alumno.getProvincia()=="Almería") {
@@ -189,14 +167,16 @@ public class FormularioEditar extends Fragment {
             s=1;
         }else if (alumno.getProvincia()=="Córdoba") {
             s=2;
-        }else if (alumno.getProvincia()=="Granad"){
+        }else if (alumno.getProvincia()=="Granada"){
             s=3;
         }else if (alumno.getProvincia()=="Huelva") {
-            s=1;
-        }else if (alumno.getProvincia()=="Málaga"){
             s=4;
-        }else if (alumno.getProvincia()=="Sevilla") {
+        }else if (alumno.getProvincia()=="Jaén") {
             s=5;
+        }else if (alumno.getProvincia()=="Málaga"){
+            s=6;
+        }else if (alumno.getProvincia()=="Sevilla") {
+            s=7;
         }
 
         return s;
@@ -255,5 +235,6 @@ public class FormularioEditar extends Fragment {
 
 
 }
+
 
 

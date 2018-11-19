@@ -26,6 +26,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class AlumnosRegistradosFragment extends Fragment {
     private Alumno alumno;
     List<Alumno> listaAlumnos;
@@ -37,10 +40,13 @@ public class AlumnosRegistradosFragment extends Fragment {
     private ListView listView;
     FormularioAlumnosFragment formularioAlumnosFragment;
     AlumnosRegistradosFragment alumnosRegistradosFragment;
-    private Button volver_a_formulario;
     private OnEventoSeleccionado callback;
     private AlumnoAdapter alumnoAdapter;
     private int itenSeleccionado;
+
+    public AlumnosRegistradosFragment() {
+
+    }
 
     @Override
     public void onAttach(Context context) {
@@ -54,8 +60,9 @@ public class AlumnosRegistradosFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View vista = inflater.inflate(R.layout.alumnos_registrados_listview, container, false);
+        ButterKnife.bind(this, vista);
         anadeListView(vista);
-        volverAlFormulario(vista);
+
         return vista;
 
 
@@ -83,15 +90,11 @@ public class AlumnosRegistradosFragment extends Fragment {
 
         registerForContextMenu(listView);
     }
-    private void volverAlFormulario(View vista) {
-        volver_a_formulario = (Button) vista.findViewById(R.id.btn_ver_formulario);
-        volver_a_formulario.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ((MainActivity) getActivity()).cambiarFragmento(new FormularioAlumnosFragment());
-            }
-        });
-    }
+
+
+
+
+
     public interface OnEventoSeleccionado {
         public void eventoSeleccionado(Alumno alumno);
     }
@@ -143,10 +146,10 @@ public class AlumnosRegistradosFragment extends Fragment {
                 AdapterView.AdapterContextMenuInfo inf = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
                 ((MainActivity) getActivity()).cambiarFragmento(new FormularioEditar());
 
-               ((MainActivity) getActivity()).valor=inf.position;
+                ((MainActivity) getActivity()).valor=inf.position;
 
-                  Toast.makeText(getContext(), (inf.position)+"", Toast.LENGTH_SHORT).show();
-               Toast.makeText(getContext(),  ((MainActivity) getActivity()).valor+"---", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), (inf.position)+"", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),  ((MainActivity) getActivity()).valor+"---", Toast.LENGTH_SHORT).show();
                 return  true;
 
         }
