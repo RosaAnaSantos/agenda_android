@@ -144,6 +144,7 @@ public class FormularioAlumnosFragment extends Fragment {
 
 
         Spinner spinner_fotos =vista.findViewById(R.id.spinner_foto);
+        /*
         fotos=new ArrayList<>();
         fotos.add(images[0]);
         fotos.add(images[1]);
@@ -151,7 +152,7 @@ public class FormularioAlumnosFragment extends Fragment {
         fotos.add(images[3]);
         fotos.add(images[4]);
         fotos.add(images[5]);
-
+*/
         spinner_fotos.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override

@@ -20,11 +20,7 @@
   <component name="ChangeListManager">
     <list default="true" id="07d7f3d8-369e-43da-9ba8-c5174a146972" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Alumno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +46,8 @@
       <file leaf-file-name="FormularioAlumnosFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="178" column="2" selection-start-line="178" selection-start-column="2" selection-end-line="178" selection-end-column="2" />
+            <state relative-caret-position="385">
+              <caret line="154" column="2" selection-start-line="154" selection-start-column="2" selection-end-line="154" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#7379#9234#0" expanded="true" />
@@ -2744,7 +2740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543172939878</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementado spinner con foto y problemas en paso datos entre activity fragment para pasar posición">
+      <created>1543186369438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543186369438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2830,7 +2833,8 @@
     <MESSAGE value="Implementando la librería Butterknife" />
     <MESSAGE value="Implementado glide para una foto" />
     <MESSAGE value="Implementado spinner con foto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementado spinner con foto" />
+    <MESSAGE value="Implementado spinner con foto y problemas en paso datos entre activity fragment para pasar posición" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementado spinner con foto y problemas en paso datos entre activity fragment para pasar posición" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2843,7 +2847,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java</url>
-          <line>158</line>
+          <line>159</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -3327,8 +3331,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="178" column="2" selection-start-line="178" selection-start-column="2" selection-end-line="178" selection-end-column="2" />
+        <state relative-caret-position="385">
+          <caret line="154" column="2" selection-start-line="154" selection-start-column="2" selection-end-line="154" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#7379#9234#0" expanded="true" />
