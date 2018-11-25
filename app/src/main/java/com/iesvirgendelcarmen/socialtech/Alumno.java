@@ -12,7 +12,7 @@ public class Alumno implements Serializable {
     private String email;
     private String formacion;
     private String provincia;
-    private int foto=2;
+    private int foto;
 
 
 

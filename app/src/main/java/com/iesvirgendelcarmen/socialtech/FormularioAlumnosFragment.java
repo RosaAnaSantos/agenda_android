@@ -29,20 +29,21 @@ import butterknife.ButterKnife;
 import static android.R.layout.simple_spinner_dropdown_item;
 
 public class FormularioAlumnosFragment extends Fragment {
-  /*
-    private EditText editext_nombre;
-    private EditText editext_apellidos;
-    private EditText editext_telefono;
-    private EditText editext_email;
-    private Spinner spinner_provincias;
-    private MultiAutoCompleteTextView mt_formacion;
-    private TextView totalAlumnos;
-    private SeekBar edad;
-    private RadioGroup radioGroup;
-    private RadioButton radioBotonMasculio;
-    private RadioButton radioBotonFemenino;
-    private TextView valor_edad;
-    */
+    private int posiciones;
+    /*
+        private EditText editext_nombre;
+        private EditText editext_apellidos;
+        private EditText editext_telefono;
+        private EditText editext_email;
+        private Spinner spinner_provincias;
+        private MultiAutoCompleteTextView mt_formacion;
+        private TextView totalAlumnos;
+        private SeekBar edad;
+        private RadioGroup radioGroup;
+        private RadioButton radioBotonMasculio;
+        private RadioButton radioBotonFemenino;
+        private TextView valor_edad;
+        */
     Button boton_ver_alumnos;
     private Button boton_guardar;
     private MultiAutoCompleteTextView mt_formacion;
@@ -80,10 +81,10 @@ public class FormularioAlumnosFragment extends Fragment {
     public static final String NOMBRE = "nombre";
     private ListView listView;
     int images[] = {R.drawable.foto0,R.drawable.foto1,R.drawable.foto2, R.drawable.foto3, R.drawable.foto4, R.drawable.foto5, R.drawable.foto6, R.drawable.foto7, R.drawable.foto8};
+    int positio;
 
-    FormularioAlumnosFragment formularioAlumnosFragment;
 
-    AlumnosRegistradosFragment alumnosRegistradosFragment;
+
 
     @Nullable
     @Override
@@ -157,10 +158,10 @@ public class FormularioAlumnosFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(getActivity(), "Has selecionado la imagen que está en la  Position: "+position+" "+images[position], Toast.LENGTH_SHORT).show();
 
+                positio=position;
+               // ((MainActivity)getActivity()).setSeleccion(positio);
 
-
-
-                Toast.makeText(getContext(), position+"fotooooo------", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), position+"  fotooooo------", Toast.LENGTH_SHORT).show();
 
             }
 
@@ -170,6 +171,12 @@ public class FormularioAlumnosFragment extends Fragment {
             }
         });
 
+/*
+        Bundle bundle=new Bundle();
+        Intent intent=new Intent(getActivity(), MainActivity.class);
+        intent.putExtra("POSICION", positio);
+        startActivity(intent);
+*/
 
         AdaptadorImagen customAdapter=new AdaptadorImagen(getContext(),images);
         spinner_fotos.setAdapter(customAdapter);
@@ -185,7 +192,7 @@ public class FormularioAlumnosFragment extends Fragment {
                 String email_alumno = editext_email.getText().toString();
                 String formacion_alumno = mt_formacion.getText().toString();
                 String provincia = spinner_provincias.getSelectedItem().toString();
-              //  String foto= spinner_foto.getSelectedItem().toString();
+               // String foto=spinner_foto.getSelectedItem().toString();
                 int edad = Integer.parseInt(valor_edad.getText().toString());
                 String sex = valorSexo(radioGroup);
                 if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno)) {
@@ -198,10 +205,11 @@ public class FormularioAlumnosFragment extends Fragment {
                     numAlumnos = listaAlumnos.size();
                     totalAlumnos.setText(numAlumnos + " ");
                     limpiarCampos();
-                    Toast.makeText(getActivity(), "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados "+ "ppppppppp----"+positio, Toast.LENGTH_LONG).show();
                 }
             }
         });//cierre onclick
+
         return vista;
     }
     public boolean comprobarDatosFormularioAlumno(String nombre, String apellidos, String
@@ -265,4 +273,6 @@ public class FormularioAlumnosFragment extends Fragment {
             }
         });
     }
+
+
 }

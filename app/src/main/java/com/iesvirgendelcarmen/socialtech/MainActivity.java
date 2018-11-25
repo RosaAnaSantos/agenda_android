@@ -41,6 +41,7 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     int valor = 0;
+    int positio=0;
 
 
 
@@ -51,7 +52,9 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-
+       /* Bundle bundle=getIntent().getExtras();
+        int positio=getIntent().getInt("POSICION");
+       */
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -63,7 +66,14 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
         FT.commit();
 
     }
-
+/*
+   public void setSeleccion(int mivalor){
+         positio=mivalor;
+   }
+   public int getSeleccion(){
+     return positio;
+   }
+*/
 
     public void cambiarFragmento(Fragment fragmento) {
         FragmentManager FM = getSupportFragmentManager();

@@ -1,7 +1,9 @@
 package com.iesvirgendelcarmen.socialtech;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
@@ -21,7 +23,11 @@ public class AlumnoAdapter extends BaseAdapter {
     private List<Alumno> list;
     private ImageView imageWiew;
     private MainActivity mainActivity;
+    FormularioAlumnosFragment formularioAlumnosFragment;
 
+    public AlumnoAdapter() {
+
+    }
 
     public AlumnoAdapter(Context context, List<Alumno> list) {
         this.context = context;
@@ -63,19 +69,42 @@ public class AlumnoAdapter extends BaseAdapter {
 
 
 
-
         String ruta="http://www.puliafitoautopartes.com.ar/img/novedad/superpop-noti_vertical_ana-4.jpg";
-
-
 /*
+        int posicion=mainActivity.getSeleccion();
+
+
         if(posicion==1){
           ruta="http://4.bp.blogspot.com/-UpikwXY4_Nk/UmqCXWZVvWI/AAAAAAAAAPQ/ROunLwblO_I/s1600/ehyttyj.jpg ";
         }
          else if(posicion==2){
             ruta="https://ytudedondevienes.files.wordpress.com/2014/04/cintia-moreno.jpg";
-
         }
-        */
+        else if(posicion==3){
+            ruta="http://www.puliafitoautopartes.com.ar/img/novedad/superpop-noti_vertical_ana-4.jpg";
+        }
+
+        else if(posicion==4){
+            ruta="https://pepitomas.files.wordpress.com/2012/05/foto-carnet-pepi-002.jpg";
+        }
+
+        else if(posicion==5){
+            ruta="";
+        }
+
+        else if(posicion==6){
+            ruta="";
+        }
+
+        else if(posicion==7){
+            ruta="";
+        }
+
+        else if(posicion==8){
+            ruta="";
+        }
+
+*/
 
         Glide.with(convertView)
                 .load(ruta)

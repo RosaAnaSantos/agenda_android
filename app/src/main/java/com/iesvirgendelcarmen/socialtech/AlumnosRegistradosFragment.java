@@ -65,12 +65,6 @@ public class AlumnosRegistradosFragment extends Fragment {
 
         return vista;
 
-
-
-
-
-
-
     }
     public void anadeListView(View view) {
         ListView listView = view.findViewById(R.id.listView_alumnos);
