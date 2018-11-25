@@ -26,6 +26,8 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static android.R.layout.simple_spinner_dropdown_item;
+
 public class FormularioAlumnosFragment extends Fragment {
   /*
     private EditText editext_nombre;
@@ -54,6 +56,7 @@ public class FormularioAlumnosFragment extends Fragment {
     EditText editext_email;
   //  @BindView(R.id.spinner_provincias)
     Spinner spinner_provincias;
+    Spinner spinner_foto;
    // @BindView(R.id.seekBar)
     SeekBar edad;
    // @BindView(R.id.radioGrou)
@@ -67,7 +70,7 @@ public class FormularioAlumnosFragment extends Fragment {
     @BindView(R.id.total_alumnos)
     TextView totalAlumnos;
 
-
+    private ArrayList<Integer> fotos;
     private List<String> provincias;
     private Alumno alumno;
     private int numAlumnos;
@@ -76,6 +79,7 @@ public class FormularioAlumnosFragment extends Fragment {
     public static final String TOTAL = "TotalAlumnos";
     public static final String NOMBRE = "nombre";
     private ListView listView;
+    int images[] = {R.drawable.foto0,R.drawable.foto1,R.drawable.foto2, R.drawable.foto3, R.drawable.foto4, R.drawable.foto5, R.drawable.foto6, R.drawable.foto7, R.drawable.foto8};
 
     FormularioAlumnosFragment formularioAlumnosFragment;
 
@@ -86,18 +90,9 @@ public class FormularioAlumnosFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View vista = inflater.inflate(R.layout.formulario_alumnos, container, false);
         ButterKnife.bind(this, vista);
-     /*   nombre = vista.findViewById(R.id.editText_nombre);
-        apellidos = vista.findViewById(R.id.editText_apellidos);
-        telefono = vista.findViewById(R.id.editText_telefono);
-        email = vista.findViewById(R.id.editText_email);
-
-        totalAlumnos = vista.findViewById(R.id.total_alumnos);
-
-
-        radioBotonMasculio = vista.findViewById(R.id.radioButonMasculino);
-        */
 
         spinner_provincias = vista.findViewById(R.id.spinner_provincias);
+        spinner_foto = vista.findViewById(R.id.spinner_foto);
         mt_formacion = vista.findViewById(R.id.multiAutoCompleteTextView);
         radioGroup = vista.findViewById(R.id.radioGrou);
         edad = vista.findViewById(R.id.seekBar);
@@ -130,7 +125,7 @@ public class FormularioAlumnosFragment extends Fragment {
         });
         //ArrayAdapter MultiAutoCompleteTextView
         String[] formaciones = getResources().getStringArray(R.array.formacion);
-        ArrayAdapter adapterFormacion = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_dropdown_item, formaciones);
+        ArrayAdapter adapterFormacion = new ArrayAdapter(getActivity(), simple_spinner_dropdown_item, formaciones);
         mt_formacion.setAdapter(adapterFormacion);
         mt_formacion.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
         //ArrayAdapter spinner provincias
@@ -143,8 +138,43 @@ public class FormularioAlumnosFragment extends Fragment {
         provincias.add("Jaén");
         provincias.add("Málaga");
         provincias.add("Sevilla");
-        ArrayAdapter adapterProvincias = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_dropdown_item, provincias);
+        ArrayAdapter<String> adapterProvincias = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_dropdown_item, provincias);
         spinner_provincias.setAdapter(adapterProvincias);
+
+
+        Spinner spinner_fotos =vista.findViewById(R.id.spinner_foto);
+        fotos=new ArrayList<>();
+        fotos.add(images[0]);
+        fotos.add(images[1]);
+        fotos.add(images[2]);
+        fotos.add(images[3]);
+        fotos.add(images[4]);
+        fotos.add(images[5]);
+
+        spinner_fotos.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getActivity(), "Has selecionado la imagen que está en la  Position: "+position+" "+images[position], Toast.LENGTH_SHORT).show();
+
+
+
+
+                Toast.makeText(getContext(), position+"fotooooo------", Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+        AdaptadorImagen customAdapter=new AdaptadorImagen(getContext(),images);
+        spinner_fotos.setAdapter(customAdapter);
+
+
         Button btn_cargar = vista.findViewById(R.id.btn_guardar_alumno);
         btn_cargar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -155,6 +185,7 @@ public class FormularioAlumnosFragment extends Fragment {
                 String email_alumno = editext_email.getText().toString();
                 String formacion_alumno = mt_formacion.getText().toString();
                 String provincia = spinner_provincias.getSelectedItem().toString();
+              //  String foto= spinner_foto.getSelectedItem().toString();
                 int edad = Integer.parseInt(valor_edad.getText().toString());
                 String sex = valorSexo(radioGroup);
                 if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno)) {
@@ -208,6 +239,7 @@ public class FormularioAlumnosFragment extends Fragment {
         valor_edad.setText(edad.getProgress() + "");
         mt_formacion.setText("");
         spinner_provincias.setSelection(0);
+        spinner_foto.setSelection(0);
         radioGroup.clearCheck();
         editext_nombre.requestFocus();
     }

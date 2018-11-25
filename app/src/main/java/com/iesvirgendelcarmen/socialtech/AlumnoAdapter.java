@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import java.util.List;
@@ -18,6 +20,7 @@ public class AlumnoAdapter extends BaseAdapter {
     private Context context;
     private List<Alumno> list;
     private ImageView imageWiew;
+    private MainActivity mainActivity;
 
 
     public AlumnoAdapter(Context context, List<Alumno> list) {
@@ -58,8 +61,24 @@ public class AlumnoAdapter extends BaseAdapter {
         telefono.setText(alumno.getTelefono());
         email.setText(alumno.getEmail());
 
+
+
+
+        String ruta="http://www.puliafitoautopartes.com.ar/img/novedad/superpop-noti_vertical_ana-4.jpg";
+
+
+/*
+        if(posicion==1){
+          ruta="http://4.bp.blogspot.com/-UpikwXY4_Nk/UmqCXWZVvWI/AAAAAAAAAPQ/ROunLwblO_I/s1600/ehyttyj.jpg ";
+        }
+         else if(posicion==2){
+            ruta="https://ytudedondevienes.files.wordpress.com/2014/04/cintia-moreno.jpg";
+
+        }
+        */
+
         Glide.with(convertView)
-                .load("http://k30.kn3.net/taringa/6/0/A/4/1/0/SensualArt/25F.jpg")
+                .load(ruta)
                 .apply(RequestOptions.placeholderOf(R.color.colorPrimary))
                 .into(foto);
 

@@ -9,6 +9,9 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" line="241" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
@@ -16,13 +19,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07d7f3d8-369e-43da-9ba8-c5174a146972" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Foto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AdaptadorImagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/foto0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/foto0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/foto0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/foto0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/foto0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/foto1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/foto2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/foto3.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/foto4.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/foto5.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/foto6.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/foto7.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/foto8.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/spinner_imagen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/alumnos_diseno_sin_fragment_java.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/alumnos_diseno_sin_fragment_java.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/foto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/geany.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/formulario_alumnos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/formulario_alumnos.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,13 +69,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FormularioAlumnosFragment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FormularioAlumnosFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="-105">
+              <caret line="162" column="63" selection-start-line="162" selection-start-column="63" selection-end-line="162" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formulario_alumnos.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_alumnos.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4860">
+              <caret line="324" column="37" selection-start-line="324" selection-start-column="37" selection-end-line="324" selection-end-column="37" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spinner_imagen.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_imagen.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state />
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdaptadorImagen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AdaptadorImagen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,8 +120,8 @@
       <file leaf-file-name="AlumnosRegistradosFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="1800">
+              <caret line="148" column="21" selection-start-line="148" selection-start-column="12" selection-end-line="150" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +132,8 @@
       <file leaf-file-name="AlumnoAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            <state relative-caret-position="222">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,77 +141,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alumnos_registrados_listview.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_registrados_listview.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="DetallesAlumnoFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-50">
-              <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+            <state relative-caret-position="42">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alumnos_diseno_sin_fragment_java.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FormularioEditar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alumnos_diseno_sin_fragment_java.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_diseno_sin_fragment_java.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FotoAPI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoAPI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Foto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Foto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formulario_editar.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
           <provider editor-type-id="android-designer2">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
-            </state>
           </provider>
         </entry>
       </file>
@@ -160,8 +194,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -2430,25 +2465,28 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/alumnos_registrados_listview.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoInterfaz.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Foto.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoAPI.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/bordes_imagen.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/alumnos_diseno_sin_fragment_java.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/formulario_alumnos.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/spinner_imagen.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AdaptadorImagen.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="150" />
-    <option name="y" value="81" />
-    <option name="width" value="1020" />
+    <option name="x" value="200" />
+    <option name="y" value="75" />
+    <option name="width" value="1010" />
     <option name="height" value="641" />
   </component>
   <component name="ProjectView">
@@ -2456,30 +2494,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -2507,12 +2523,63 @@
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="SocialTech" type="cbb8eebc:String" user="SocialTech" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/iesvirgendelcarmen/socialtech" type="cbb8eebc:String" user="com/iesvirgendelcarmen/socialtech" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="res" type="cbb8eebc:String" user="res" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="res" type="cbb8eebc:String" user="res" />
+              <item name="layout" type="cbb8eebc:String" user="layout" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="SocialTech" type="cbb8eebc:String" user="SocialTech" />
-              <item name="SocialTech" type="cbb8eebc:String" user="SocialTech" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -2523,8 +2590,16 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="device.picker.selection" value="LGK350WGZTO7UG" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Descargas/customSpinner" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2685,7 +2760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542662066823</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementado glide para una foto">
+      <created>1543092859638</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543092859639</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2706,37 +2788,37 @@
       <window_info id="Image Layers" order="6" />
       <window_info id="Build Variants" order="1" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5004003" side_tool="true" visible="true" weight="0.3283582" />
-      <window_info anchor="right" id="Preview" order="1" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49959967" visible="true" weight="0.3283582" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.12730184" side_tool="true" weight="1.0" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49879903" weight="0.014925373" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3283582" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.3283582" />
-      <window_info anchor="bottom" id="Logcat" order="4" sideWeight="0.87429947" weight="0.3283582" />
+      <window_info anchor="bottom" id="Logcat" order="4" sideWeight="0.8726982" weight="0.32669982" />
       <window_info id="Captures" order="7" weight="0.25" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.49876544" visible="true" weight="0.22978383" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.24709785" />
-      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.49876544" visible="true" weight="0.25780624" />
+      <window_info anchor="bottom" id="Build" order="0" visible="true" weight="0.26699835" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info id="Structure" order="5" sideWeight="0.5012346" side_tool="true" weight="0.22978383" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="right" id="Device File Explorer" order="8" side_tool="true" weight="0.3298639" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="4" weight="0.4" />
+      <window_info anchor="right" id="Preview" order="1" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Build" order="0" weight="0.3283582" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.0" />
       <window_info id="Designer" order="0" />
       <window_info id="Build Variants" order="1" side_tool="true" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49879903" weight="0.014925373" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Android Profiler" order="1" />
@@ -2745,20 +2827,20 @@
       <window_info id="Capture Tool" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Commander" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.12730184" side_tool="true" weight="1.0" />
       <window_info anchor="right" id="Preview" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="8" side_tool="true" weight="0.3298639" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="4" visible="true" weight="0.3283582" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Logcat" order="4" sideWeight="0.8726982" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3283582" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.3283582" />
       <window_info anchor="right" id="Gradle" order="2" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.24979983" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.49876544" visible="true" weight="0.35308248" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.3283582" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="5" sideWeight="0.5012346" side_tool="true" weight="0.22978383" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
@@ -2769,22 +2851,89 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementando la librería Butterknife" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementando la librería Butterknife" />
+    <MESSAGE value="Implementado glide para una foto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementado glide para una foto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java</url>
-          <line>60</line>
+          <line>79</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java</url>
+          <line>157</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_registrados_listview.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_diseno_sin_fragment_java.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1965">
+          <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -2833,13 +2982,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1965">
           <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -2914,13 +3063,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1965">
           <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -3018,43 +3167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -3079,18 +3191,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="180">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3114,7 +3216,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="1965">
           <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
         </state>
       </provider>
@@ -3122,29 +3224,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bordes_imagen.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bordes_imagen.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_registrados_listview.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
+        <state relative-caret-position="555">
           <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
         </state>
       </provider>
@@ -3153,12 +3236,107 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_diseno_sin_fragment_java.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_alumnos.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4860">
+          <caret line="324" column="37" selection-start-line="324" selection-start-column="37" selection-end-line="324" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="148" column="21" selection-start-line="148" selection-start-column="12" selection-end-line="150" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AdaptadorImagen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_imagen.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="162" column="63" selection-start-line="162" selection-start-column="63" selection-end-line="162" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
