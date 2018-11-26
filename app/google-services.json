@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "81781328558",
+    "firebase_url": "https://socialtech-23f37.firebaseio.com",
+    "project_id": "socialtech-23f37",
+    "storage_bucket": "socialtech-23f37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81781328558:android:53cadb6fcc37ba9a",
+        "android_client_info": {
+          "package_name": "com.iesvirgendelcarmen.socialtech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81781328558-ai5996fm7p4qko9bveqonmhp236rb3sv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcld5wudHxbSovZsDnBE5o1ZFs363nOX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

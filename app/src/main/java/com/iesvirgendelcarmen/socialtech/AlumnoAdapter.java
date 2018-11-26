@@ -75,6 +75,7 @@ public class AlumnoAdapter extends BaseAdapter {
             if (posicion == 1) {
                 ruta = "http://4.bp.blogspot.com/-UpikwXY4_Nk/UmqCXWZVvWI/AAAAAAAAAPQ/ROunLwblO_I/s1600/ehyttyj.jpg ";
             } else if (posicion == 2) {
+
                 ruta = "https://ytudedondevienes.files.wordpress.com/2014/04/cintia-moreno.jpg";
             } else if (posicion == 3) {
                 ruta = "http://www.puliafitoautopartes.com.ar/img/novedad/superpop-noti_vertical_ana-4.jpg";
