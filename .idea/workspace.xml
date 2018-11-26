@@ -5,21 +5,16 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
-  </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" line="241" />
-  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07d7f3d8-369e-43da-9ba8-c5174a146972" name="Default" comment="">
+    <list default="true" id="3a21e6d9-a474-4e6f-a52a-b8928dbe912b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,19 +37,12 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FormularioAlumnosFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
+    <leaf>
+      <file leaf-file-name="AlumnoAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="154" column="2" selection-start-line="154" selection-start-column="2" selection-end-line="154" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7379#9234#0" expanded="true" />
-                <element signature="e#9233#9234#0" expanded="true" />
-                <element signature="e#11608#11826#0" expanded="true" />
-                <element signature="e#11825#11826#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="494">
+              <caret line="89" column="75" selection-start-line="89" selection-start-column="75" selection-end-line="89" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -62,92 +50,8 @@
       <file leaf-file-name="Alumno.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Alumno.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formulario_alumnos.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_alumnos.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4860">
-              <caret line="324" column="37" selection-start-line="324" selection-start-column="37" selection-end-line="324" selection-end-column="37" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spinner_imagen.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_imagen.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state />
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdaptadorImagen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AdaptadorImagen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlumnosRegistradosFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlumnoAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="77" column="2" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetallesAlumnoFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-124">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormularioEditar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1386">
+              <caret line="14" column="15" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -155,27 +59,22 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3877#3878#0" expanded="true" />
-                <element signature="e#3912#3913#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormularioAlumnosFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="resourceFile" />
-        <option value="layoutResourceFile" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2276,151 +2175,151 @@
               <option name="name" value="SocialTech" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/model-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/signing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources-sftp" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/internal-integ-testing" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/launcher" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/wrapper" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/test-kit" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/internal-integ-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/platform-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/diagnostics" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/ear" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/installation-beacon" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/ide-play" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/testing-junit-platform" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/plugins" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources-gcs" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/plugin-use" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/model-core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/testing-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-java" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-cache" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/internal-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/plugin-development" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/tooling-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/osgi" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/logging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/maven" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-cache-http" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/ide" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/process-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources-s3" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-comparison" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/testing-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/jvm-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/workers" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/base-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-option" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/platform-play" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/composite-builds" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/core-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/jacoco" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/messaging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/code-quality" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/signing" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/ivy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/testing-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/javascript" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/antlr" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/reporting" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/dependency-management" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/cli" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources-http" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/platform-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/ide-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/announce" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/base-services-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/internal-performance-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/platform-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources-gcs" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/installation-beacon" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/internal-android-performance-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/model-core" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/publish" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/language-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-jvm-services-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-model-core-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-launcher-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-messaging-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-base-services-groovy-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-wrapper-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-runtime-api-info-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-kotlin-dsl-0.15.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-core-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-resources-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-cli-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/ant-1.9.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-build-cache-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/ant-launcher-1.9.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/groovy-all-2.4.12.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-installation-beacon-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-process-services-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-model-groovy-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-kotlin-dsl-tooling-builders-0.15.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/testing-junit-platform" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/build-cache-http" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-persistent-cache-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-docs-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-kotlin-dsl-tooling-models-0.15.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-core-api-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-build-option-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-base-services-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-logging-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-base-services-groovy-4.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-tooling-api-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-composite-builds-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-plugins-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-platform-native-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-platform-jvm-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-kotlin-dsl-tooling-models-0.15.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/ant-1.9.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-resources-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-logging-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-kotlin-dsl-tooling-builders-0.15.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-launcher-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-kotlin-dsl-0.15.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-cli-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-wrapper-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-jvm-services-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-build-option-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-model-core-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-installation-beacon-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-core-api-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-core-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-docs-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-build-cache-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-runtime-api-info-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-messaging-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/ant-launcher-1.9.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-process-services-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-base-services-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/gradle-model-groovy-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-jacoco-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ide-play-4.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-reporting-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-osgi-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-diagnostics-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-testing-base-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-maven-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-build-comparison-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-resources-http-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-testing-native-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-language-native-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-code-quality-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ide-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-publish-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-language-groovy-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-scala-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-testing-junit-platform-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-signing-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-language-jvm-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-plugin-development-4.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-javascript-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-language-scala-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-resources-s3-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ivy-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-testing-jvm-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-test-kit-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ide-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-diagnostics-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-dependency-management-4.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-platform-play-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ide-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-build-comparison-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-testing-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-test-kit-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-maven-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-build-cache-http-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-scala-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-platform-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-plugins-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ivy-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-resources-s3-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-signing-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ide-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-version-control-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-testing-jvm-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ear-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-testing-junit-platform-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-announce-4.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-tooling-api-builders-4.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-resources-gcs-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ear-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-antlr-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-build-cache-http-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-dependency-management-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-language-groovy-4.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-resources-sftp-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-platform-base-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-testing-base-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-resources-http-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-osgi-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-language-native-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-publish-4.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-workers-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-plugin-use-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-announce-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-jacoco-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-build-init-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-version-control-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-language-jvm-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-ide-play-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-code-quality-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-composite-builds-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-language-scala-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-antlr-4.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-language-java-4.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-plugin-development-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-build-init-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-platform-base-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-platform-jvm-4.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/plugins/gradle-plugin-use-4.6.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -2439,96 +2338,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/alumnos_registrados_listview.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoInterfaz.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Foto.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoAPI.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bordes_imagen.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/alumnos_diseno_sin_fragment_java.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/formulario_alumnos.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/spinner_imagen.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AdaptadorImagen.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Alumno.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="200" />
-    <option name="y" value="75" />
-    <option name="width" value="1010" />
-    <option name="height" value="641" />
+    <option name="x" value="209" />
+    <option name="y" value="38" />
+    <option name="width" value="1119" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="main" type="cbb8eebc:String" user="main" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="main" type="cbb8eebc:String" user="main" />
-              <item name="java" type="cbb8eebc:String" user="java" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="main" type="cbb8eebc:String" user="main" />
-              <item name="java" type="cbb8eebc:String" user="java" />
-              <item name="com/iesvirgendelcarmen/socialtech" type="cbb8eebc:String" user="com/iesvirgendelcarmen/socialtech" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="SocialTech" type="cbb8eebc:String" user="SocialTech" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="SocialTech" type="cbb8eebc:String" user="SocialTech" />
-              <item name="SocialTech" type="cbb8eebc:String" user="SocialTech" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2539,33 +2365,37 @@
             <path>
               <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="socialtech" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="SocialTech" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="device.picker.selection" value="LGK350WGZTO7UG" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Descargas/customSpinner" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-    </key>
+    <property name="device.picker.selection" value="Nexus_4_API_22" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2663,7 +2493,7 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -2674,38 +2504,9 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -2713,635 +2514,95 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="07d7f3d8-369e-43da-9ba8-c5174a146972" name="Default" comment="" />
-      <created>1542658250243</created>
+      <changelist id="3a21e6d9-a474-4e6f-a52a-b8928dbe912b" name="Default" comment="" />
+      <created>1543217526660</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1542658250243</updated>
+      <updated>1543217526660</updated>
     </task>
-    <task id="LOCAL-00001" summary="Implementando la librería Butterknife">
-      <created>1542662066823</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1542662066823</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Implementado glide para una foto">
-      <created>1543092859638</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1543092859639</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Implementado spinner con foto">
-      <created>1543172939878</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1543172939878</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Implementado spinner con foto y problemas en paso datos entre activity fragment para pasar posición">
-      <created>1543186369438</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1543186369438</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="1" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.3283582" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Build Variants" order="1" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.12730184" side_tool="true" weight="1.0" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49879903" weight="0.014925373" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3283582" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.3283582" />
-      <window_info anchor="bottom" id="Logcat" order="4" sideWeight="0.8726982" weight="0.7296849" />
-      <window_info id="Captures" order="7" weight="0.25" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.49876544" visible="true" weight="0.27141714" />
-      <window_info anchor="bottom" id="Build" order="0" weight="0.3283582" />
-      <window_info anchor="right" id="Gradle" order="2" />
-      <window_info id="Structure" order="5" sideWeight="0.5012346" side_tool="true" weight="0.22978383" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="right" id="Device File Explorer" order="8" side_tool="true" weight="0.3298639" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="4" weight="0.4" />
-      <window_info anchor="right" id="Preview" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Android Profiler" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info id="Build Variants" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info id="Captures" order="2" weight="0.25" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2745411" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.040983606" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Build" order="0" visible="true" weight="0.3283582" />
-      <window_info id="Designer" order="0" />
-      <window_info id="Build Variants" order="1" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49879903" weight="0.014925373" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Android Profiler" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Captures" order="7" weight="0.25" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Commander" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.12730184" side_tool="true" weight="1.0" />
-      <window_info anchor="right" id="Preview" order="1" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="right" id="Device File Explorer" order="8" side_tool="true" weight="0.3298639" />
-      <window_info anchor="bottom" id="Logcat" order="4" sideWeight="0.8726982" weight="0.7296849" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3283582" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.3283582" />
-      <window_info anchor="right" id="Gradle" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.49876544" visible="true" weight="0.27141714" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.3283582" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Structure" order="5" sideWeight="0.5012346" side_tool="true" weight="0.22978383" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementando la librería Butterknife" />
-    <MESSAGE value="Implementado glide para una foto" />
-    <MESSAGE value="Implementado spinner con foto" />
-    <MESSAGE value="Implementado spinner con foto y problemas en paso datos entre activity fragment para pasar posición" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementado spinner con foto y problemas en paso datos entre activity fragment para pasar posición" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java</url>
-          <line>108</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="9" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_registrados_listview.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_diseno_sin_fragment_java.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7379#9234#0" expanded="true" />
-            <element signature="e#9233#9234#0" expanded="true" />
-            <element signature="e#11608#11826#0" expanded="true" />
-            <element signature="e#11825#11826#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3877#3878#0" expanded="true" />
-            <element signature="e#3912#3913#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7379#9234#0" expanded="true" />
-            <element signature="e#9233#9234#0" expanded="true" />
-            <element signature="e#11608#11826#0" expanded="true" />
-            <element signature="e#11825#11826#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3877#3878#0" expanded="true" />
-            <element signature="e#3912#3913#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7379#9234#0" expanded="true" />
-            <element signature="e#9233#9234#0" expanded="true" />
-            <element signature="e#11608#11826#0" expanded="true" />
-            <element signature="e#11825#11826#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3877#3878#0" expanded="true" />
-            <element signature="e#3912#3913#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Foto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FotoAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Android/Sdk/platforms/android-28/android.jar!/android/widget/Adapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bordes_imagen.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_registrados_listview.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/alumnos_diseno_sin_fragment_java.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_alumnos.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4860">
-          <caret line="324" column="37" selection-start-line="324" selection-start-column="37" selection-end-line="324" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_imagen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/DetallesAlumnoFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/Alumno.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AdaptadorImagen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnosRegistradosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3877#3878#0" expanded="true" />
-            <element signature="e#3912#3913#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1386">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/AlumnoAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="77" column="2" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="494">
+          <caret line="89" column="75" selection-start-line="89" selection-start-column="75" selection-end-line="89" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="154" column="2" selection-start-line="154" selection-start-column="2" selection-end-line="154" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7379#9234#0" expanded="true" />
-            <element signature="e#9233#9234#0" expanded="true" />
-            <element signature="e#11608#11826#0" expanded="true" />
-            <element signature="e#11825#11826#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="135" column="34" lean-forward="true" selection-start-line="135" selection-start-column="34" selection-end-line="135" selection-end-column="34" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

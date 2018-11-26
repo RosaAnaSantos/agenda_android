@@ -144,15 +144,7 @@ public class FormularioAlumnosFragment extends Fragment {
 
 
         Spinner spinner_fotos =vista.findViewById(R.id.spinner_foto);
-        /*
-        fotos=new ArrayList<>();
-        fotos.add(images[0]);
-        fotos.add(images[1]);
-        fotos.add(images[2]);
-        fotos.add(images[3]);
-        fotos.add(images[4]);
-        fotos.add(images[5]);
-*/
+
         spinner_fotos.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
@@ -160,7 +152,6 @@ public class FormularioAlumnosFragment extends Fragment {
                 Toast.makeText(getActivity(), "Has selecionado la imagen que está en la  Position: "+position+" "+images[position], Toast.LENGTH_SHORT).show();
 
                 positio=position;
-               // ((MainActivity)getActivity()).setSeleccion(positio);
 
                 Toast.makeText(getContext(), position+"  fotooooo------", Toast.LENGTH_SHORT).show();
 
@@ -201,6 +192,7 @@ public class FormularioAlumnosFragment extends Fragment {
                         formacion_alumno = " ----NO contesta en FORMACIÓN----";
                     }
                     Alumno alumno = new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
+                    alumno.setFoto(positio);
                     List<Alumno> listaAlumnos = ((MainActivity)getActivity()).getListaAlumnos();
                     listaAlumnos.add(alumno);
                     numAlumnos = listaAlumnos.size();
