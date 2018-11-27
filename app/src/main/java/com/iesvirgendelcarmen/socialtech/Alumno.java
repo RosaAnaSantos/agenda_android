@@ -87,7 +87,7 @@ public class Alumno implements Serializable {
     }
 
     public String getEdad() {
-        return edad+"";
+        return edad+" ";
     }
 
     public void setEdad(int edad) {

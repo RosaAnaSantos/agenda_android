@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -24,6 +25,13 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 import java.util.List;
 import butterknife.ButterKnife;
@@ -68,9 +76,11 @@ public class AlumnosRegistradosFragment extends Fragment {
     }
     public void anadeListView(View view) {
         ListView listView = view.findViewById(R.id.listView_alumnos);
-        listaAlumnos = new ArrayList<Alumno>();
         listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
         alumnoAdapter = new AlumnoAdapter(getActivity(), listaAlumnos);
+
+
+
         listView.setAdapter(alumnoAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
