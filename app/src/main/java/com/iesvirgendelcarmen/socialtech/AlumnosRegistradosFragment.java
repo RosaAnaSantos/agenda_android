@@ -79,6 +79,38 @@ public class AlumnosRegistradosFragment extends Fragment {
         listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
         alumnoAdapter = new AlumnoAdapter(getActivity(), listaAlumnos);
 
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("alumnos");
+
+        myRef.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                if (dataSnapshot != null && dataSnapshot.getValue() != null) {
+                    Alumno alumno = dataSnapshot.getValue(Alumno.class);
+                    listaAlumnos.add(alumno);
+                    alumnoAdapter.notifyDataSetChanged();
+                }
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+            }
+        });
+
+
+
 
 
         listView.setAdapter(alumnoAdapter);

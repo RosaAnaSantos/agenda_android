@@ -103,6 +103,7 @@ public class FormularioEditar extends Fragment {
                 }
             });
         }
+        edad.setProgress(Integer.parseInt(alumno.getEdad()));
 
 
         //ArrayAdapter MultiAutoCompleteTextView
