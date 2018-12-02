@@ -78,7 +78,7 @@ public class AlumnosRegistradosFragment extends Fragment {
         ListView listView = view.findViewById(R.id.listView_alumnos);
         listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
         alumnoAdapter = new AlumnoAdapter(getActivity(), listaAlumnos);
-
+/*
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("alumnos");
 
@@ -110,7 +110,7 @@ public class AlumnosRegistradosFragment extends Fragment {
         });
 
 
-
+*/
 
 
         listView.setAdapter(alumnoAdapter);
