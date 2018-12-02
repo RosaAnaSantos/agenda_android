@@ -34,10 +34,11 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
     public static final String KEY_LISTA_ALUMNO = "ListaAlumnos";
     public static final String TOTAL = "TotalAlumnos";
     public static final String NOMBRE = "nombre";
-    private DetallesAlumnoFragment detallesAlumnoFragment;
+    private DetallesAlumnoFragment detallesAlumnoFragment=new DetallesAlumnoFragment();
     private FormularioAlumnosFragment fragmentFormulario = new FormularioAlumnosFragment();
     private AlumnosRegistradosFragment alumnosRegistradosFragment = new AlumnosRegistradosFragment();
-    private FormularioEditar formularioEditar = new FormularioEditar();
+    private FormularioEditar formularioEditar;
+
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     int valor = 0;
@@ -52,11 +53,9 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-       /* Bundle bundle=getIntent().getExtras();
-        int positio=getIntent().getInt("POSICION");
-       */
+
         setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
+         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
@@ -66,23 +65,16 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
         FT.commit();
 
     }
-/*
-   public void setSeleccion(int mivalor){
-         positio=mivalor;
-   }
-   public int getSeleccion(){
-     return positio;
-   }
-*/
+
 
     public void cambiarFragmento(Fragment fragmento) {
         FragmentManager FM = getSupportFragmentManager();
         FragmentTransaction FT = FM.beginTransaction();
         FT.replace(R.id.contenedor, fragmento);
+        cambiarTitulo(fragmento);
         FT.commit();
-
-
     }
+
 
     public void eventoSeleccionado(Alumno alumno) {
         DetallesAlumnoFragment detallesAlumnoFragment = new DetallesAlumnoFragment();
@@ -90,6 +82,7 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
         bundle.putSerializable("EVENTO", alumno);
         detallesAlumnoFragment.setArguments(bundle);
         cambiarFragmento(detallesAlumnoFragment);
+
     }
 
 
@@ -105,9 +98,11 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
 
             case R.id.menu_formulario:
                 cambiarFragmento(fragmentFormulario);
+                cambiarTitulo(fragmentFormulario);
                 return true;
             case R.id.menu_alumnos_registrados:
                 cambiarFragmento(alumnosRegistradosFragment);
+                cambiarTitulo(alumnosRegistradosFragment);
                 return true;
         }
 
@@ -125,5 +120,29 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
         outState.putSerializable(KEY_ALUMNO, (ArrayList<Alumno>) listaAlumnos);
         outState.putInt(TOTAL, listaAlumnos.size());
     }
+   public void  cambiarTitulo(Fragment fragmento){
+       TextView titulo;
+       titulo=findViewById(R.id.textV_titulo);
+       if(fragmento==fragmentFormulario ){
+         titulo.setText("Registro Alumnos");
+       }
+       if(fragmento==alumnosRegistradosFragment){
+          titulo.setText("Alumnos Registrados");
+       }
+
+
+       if(fragmento==detallesAlumnoFragment){
+           titulo.setText("Detalle alumno");
+       }
+
+       if(fragmento==formularioEditar){
+           titulo.setText("Editar alumno");
+       }
+       else {titulo.setText("Alumno");
+
+       }
+    }
+
+
 
 }

@@ -38,7 +38,7 @@ public class DetallesAlumnoFragment extends Fragment {
     TextView sexo;
     @BindView(R.id.tvFormacion)
     TextView formacion;
-
+    DetallesAlumnoFragment detallesAlumnoFragment;
 
 
     @Nullable
@@ -57,7 +57,6 @@ public class DetallesAlumnoFragment extends Fragment {
         provincia.setText(alumno.getProvincia());
         edad.setText(alumno.getEdad());
         sexo.setText(alumno.getSexo());
-
         return vista;
 
     }

@@ -48,6 +48,7 @@ public class AlumnosRegistradosFragment extends Fragment {
     private ListView listView;
     FormularioAlumnosFragment formularioAlumnosFragment;
     AlumnosRegistradosFragment alumnosRegistradosFragment;
+    FormularioEditar formularioEditar;
     private OnEventoSeleccionado callback;
     private AlumnoAdapter alumnoAdapter;
     private int itenSeleccionado;
@@ -183,7 +184,7 @@ public class AlumnosRegistradosFragment extends Fragment {
                 ((MainActivity) getActivity()).cambiarFragmento(new FormularioEditar());
 
                 ((MainActivity) getActivity()).valor=inf.position;
-
+                ( (MainActivity) getActivity()).cambiarTitulo(formularioEditar);
                 Toast.makeText(getContext(), (inf.position)+"", Toast.LENGTH_SHORT).show();
                 Toast.makeText(getContext(),  ((MainActivity) getActivity()).valor+"---", Toast.LENGTH_SHORT).show();
                 return  true;

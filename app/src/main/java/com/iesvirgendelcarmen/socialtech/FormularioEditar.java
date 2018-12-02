@@ -49,6 +49,7 @@ public class FormularioEditar extends Fragment {
     private List<Alumno> listaAlumnos;
     private AlumnosRegistradosFragment alumnosRegistradosFragment;
     private AlumnosRegistradosFragment.OnEventoSeleccionado callback;
+    private FormularioEditar formularioEditar;
 
     @Override
     public void onAttach(Context context) {
@@ -64,6 +65,7 @@ public class FormularioEditar extends Fragment {
         View vista = inflater.inflate(R.layout.formulario_editar, container, false);
         ButterKnife.bind(this, vista);
 
+        ((MainActivity)getActivity()).cambiarTitulo(formularioEditar);
         List<Alumno>  listaAlumnos = new ArrayList<Alumno>();
         listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
         Alumno alumno=listaAlumnos.get(((MainActivity) getActivity()).valor);
