@@ -139,5 +139,3 @@ public class Alumno implements Serializable {
         return getNombre() +" "+getApellidos()+" "+getTelefono()+" "+getEmail();
     }
 }
-
-

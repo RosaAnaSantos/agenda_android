@@ -14,7 +14,7 @@
     <TextView
         android:id="@+id/textV_titulo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:shadowColor="#a0a0a0"
         android:shadowDx="8"
         android:shadowDy="8"
@@ -24,14 +24,17 @@
         android:textColor="#484f89"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:typeface="serif" />
+        android:typeface="serif"
+        android:paddingTop="10dp"/>
 
     <RelativeLayout
         android:id="@+id/contenedor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
-        android:background="#d1e3a5"></RelativeLayout>
+        android:background="#fff">
+
+    </RelativeLayout>
 
 </LinearLayout>
 
