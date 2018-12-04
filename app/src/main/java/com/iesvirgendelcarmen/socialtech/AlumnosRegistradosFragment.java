@@ -26,11 +26,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,9 +79,8 @@ public class AlumnosRegistradosFragment extends Fragment {
     }
     public void anadeListView(View view) {
         ListView listView = view.findViewById(R.id.listView_alumnos);
-        listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
-        alumnoAdapter = new AlumnoAdapter(getActivity(), listaAlumnos);
-/*
+
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("alumnos");
 
@@ -111,8 +112,10 @@ public class AlumnosRegistradosFragment extends Fragment {
         });
 
 
-*/
 
+
+        listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
+        alumnoAdapter = new AlumnoAdapter(getActivity(), listaAlumnos);
 
         listView.setAdapter(alumnoAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -193,7 +196,6 @@ public class AlumnosRegistradosFragment extends Fragment {
 
         return super.onContextItemSelected(item);
     }
-
 
 
 

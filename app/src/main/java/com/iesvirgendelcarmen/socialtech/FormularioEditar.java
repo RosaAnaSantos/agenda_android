@@ -140,7 +140,7 @@ public class FormularioEditar extends Fragment {
         String email_alumno = editext_email.getText().toString();
         String formacion_alumno = mt_formacion.getText().toString();
         String provincia = spinner_provincias.getSelectedItem().toString();
-        int edad = Integer.parseInt(valor_edad.getText().toString());
+        String edad = valor_edad.getText().toString();
         String sex = valorSexo(radioGroup);
         if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno)) {
             if (formacion_alumno.length() == 0) {

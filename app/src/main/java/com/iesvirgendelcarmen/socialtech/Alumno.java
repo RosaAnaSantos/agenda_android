@@ -6,7 +6,7 @@ import java.util.List;
 public class Alumno implements Serializable {
     private String nombre;
     private String apellidos;
-    private int edad;
+    private String edad;
     private String sexo;
     private String telefono;
     private String email;
@@ -19,7 +19,7 @@ public class Alumno implements Serializable {
     public Alumno()  {
     }
 
-    public Alumno(String nombre, String apellidos, int edad, String sexo, String telefono, String email, String formacion, String provincia, int foto) {
+    public Alumno(String nombre, String apellidos, String edad, String sexo, String telefono, String email, String formacion, String provincia, int foto) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
@@ -31,7 +31,7 @@ public class Alumno implements Serializable {
         this.foto = foto;
     }
 
-    public Alumno(String nombre, String apellidos, int edad, String telefono, String email) {
+    public Alumno(String nombre, String apellidos, String edad, String telefono, String email) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
@@ -47,7 +47,7 @@ public class Alumno implements Serializable {
         this.email = email;
     }
 
-    public Alumno(String nombre, String apellidos, int edad, String sexo, String telefono, String email, String formacion, String provincia) {
+    public Alumno(String nombre, String apellidos, String edad, String sexo, String telefono, String email, String formacion, String provincia) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
@@ -90,7 +90,7 @@ public class Alumno implements Serializable {
         return edad+" ";
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(String edad) {
         this.edad = edad;
     }
 

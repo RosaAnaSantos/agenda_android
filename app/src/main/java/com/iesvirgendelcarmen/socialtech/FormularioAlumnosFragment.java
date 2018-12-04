@@ -176,7 +176,7 @@ public class FormularioAlumnosFragment extends Fragment {
                 String formacion_alumno = mt_formacion.getText().toString();
                 String provincia = spinner_provincias.getSelectedItem().toString();
                 // String foto=spinner_foto.getSelectedItem().toString();
-                int edad = Integer.parseInt(valor_edad.getText().toString());
+                String edad = valor_edad.getText().toString();
                 String sex = valorSexo(radioGroup);
                 if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno)) {
                     if (formacion_alumno.length() == 0) {
