@@ -81,6 +81,7 @@ public class FormularioAlumnosFragment extends Fragment {
     private FirebaseDatabase database;
     private DatabaseReference myRef;
 
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -182,15 +183,23 @@ public class FormularioAlumnosFragment extends Fragment {
                     if (formacion_alumno.length() == 0) {
                         formacion_alumno = " ----NO contesta en FORMACIÓN----";
                     }
-                    Alumno alumno = new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
+                    alumno = new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
                     alumno.setFoto(positio);
                     listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
-                    listaAlumnos.add(alumno);
+                    //listaAlumnos.add(alumno);
                     numAlumnos = listaAlumnos.size();
 
                     database = FirebaseDatabase.getInstance();
                     myRef = database.getReference("alumnos");
-                    myRef.push().setValue(alumno);
+                    myRef.push().setValue(alumno, new DatabaseReference.CompletionListener() {
+                        @Override
+                        public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
+                            String key = databaseReference.getKey();
+                            alumno.setKey(key);
+                        }
+                    });
+
+
 
                     totalAlumnos.setText(numAlumnos + " ");
                     limpiarCampos();

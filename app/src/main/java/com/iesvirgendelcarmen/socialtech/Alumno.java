@@ -13,10 +13,10 @@ public class Alumno implements Serializable {
     private String formacion;
     private String provincia;
     private int foto;
+    private String key;
 
 
-
-    public Alumno()  {
+    public Alumno() {
     }
 
     public Alumno(String nombre, String apellidos, String edad, String sexo, String telefono, String email, String formacion, String provincia, int foto) {
@@ -87,7 +87,7 @@ public class Alumno implements Serializable {
     }
 
     public String getEdad() {
-        return edad+" ";
+        return edad + " ";
     }
 
     public void setEdad(String edad) {
@@ -134,8 +134,11 @@ public class Alumno implements Serializable {
         this.foto = foto;
     }
 
-    @Override
-    public String toString() {
-        return getNombre() +" "+getApellidos()+" "+getTelefono()+" "+getEmail();
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }

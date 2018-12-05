@@ -89,7 +89,9 @@ public class AlumnosRegistradosFragment extends Fragment {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 if (dataSnapshot != null && dataSnapshot.getValue() != null) {
                     Alumno alumno = dataSnapshot.getValue(Alumno.class);
+                    alumno.setKey(dataSnapshot.getKey());
                     listaAlumnos.add(alumno);
+
                     alumnoAdapter.notifyDataSetChanged();
                 }
             }
