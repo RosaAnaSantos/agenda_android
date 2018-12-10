@@ -147,11 +147,11 @@ public class FormularioAlumnosFragment extends Fragment {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getActivity(), "Has selecionado la imagen que está en la  Position: " + position + " " + images[position], Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getActivity(), "Has selecionado la imagen que está en la  Position: " + position + " " + images[position], Toast.LENGTH_SHORT).show();
 
                 positio = position;
 
-                Toast.makeText(getContext(), position + "  fotooooo------", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getContext(), position + "  fotooooo------", Toast.LENGTH_SHORT).show();
 
             }
 
@@ -201,7 +201,7 @@ public class FormularioAlumnosFragment extends Fragment {
 
                     totalAlumnos.setText(numAlumnos + " ");
                     limpiarCampos();
-                    Toast.makeText(getActivity(), "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados " + "ppppppppp----" + positio, Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getActivity(), "Se ha registrado " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados " + "ppppppppp----" + positio, Toast.LENGTH_LONG).show();
                 }
 
 

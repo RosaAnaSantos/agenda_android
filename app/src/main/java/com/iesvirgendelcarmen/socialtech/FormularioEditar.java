@@ -7,9 +7,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.RadioButton;
@@ -43,6 +45,10 @@ public class FormularioEditar extends Fragment {
     @BindView(R.id.radioButonMasculino) RadioButton radioBotonMasculio;
     @BindView(R.id.radioButonFemenino) RadioButton radioBotonFemenino;
     @BindView(R.id.seekbar_valorEdad) TextView valor_edad;
+   // @BindView(R.id.spinner_foto_editar) Spinner spinner_foto_editar;
+   // @BindView(R.id.imageView)
+   // ImageView foto;
+    private  int images[] = {R.drawable.foto0, R.drawable.foto1, R.drawable.foto2, R.drawable.foto3, R.drawable.foto4, R.drawable.foto5, R.drawable.foto6, R.drawable.foto7, R.drawable.foto8};
     private Alumno alumno;
     private int numAlumnos;
     private List<String> provincias;
@@ -56,6 +62,7 @@ public class FormularioEditar extends Fragment {
     private FormularioEditar formularioEditar;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
+    private int positio;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -75,7 +82,7 @@ public class FormularioEditar extends Fragment {
         listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
         Alumno alumno=listaAlumnos.get(((MainActivity) getActivity()).valor);
         AlumnoAdapter alumnoAdapter = new AlumnoAdapter(getActivity(), listaAlumnos);
-
+        Spinner spinner_foto_editar=vista.findViewById(R.id.spinner_foto_editar);
 
         editext_nombre.setText(alumno.getNombre());
         editext_apellidos.setText(alumno.getApellidos());
@@ -85,10 +92,8 @@ public class FormularioEditar extends Fragment {
         mt_formacion.setText(alumno.getFormacion());
         radioGroup = vista.findViewById(R.id.radioGrou);
         valor_edad.setText(alumno.getEdad());
-
         mostrarSexo(alumno);
-
-
+       int posicion = alumno.getFoto();
 
         if (edad != null) {
             edad.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -110,7 +115,7 @@ public class FormularioEditar extends Fragment {
                 }
             });
         }
-       // edad.setProgress(Integer.parseInt(alumno.getEdad()));
+
 
 
         //ArrayAdapter MultiAutoCompleteTextView
@@ -132,6 +137,31 @@ public class FormularioEditar extends Fragment {
         spinner_provincias.setAdapter(adapterProvincias);
         spinner_provincias.setSelection(seleccionProvincia(alumno));
 
+        Spinner spinner_fotos = vista.findViewById(R.id.spinner_foto_editar);
+
+        spinner_fotos.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //Toast.makeText(getActivity(), "Has selecionado la imagen que está en la  Position: " + position + " " + images[position], Toast.LENGTH_SHORT).show();
+
+                positio = position;
+
+              //  Toast.makeText(getContext(), position + "  fotooooo------", Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+        AdaptadorImagen customAdapter = new AdaptadorImagen(getContext(), images);
+        spinner_fotos.setAdapter(customAdapter);
+
+
 
         return vista;
     }
@@ -147,19 +177,16 @@ public class FormularioEditar extends Fragment {
         String provincia = spinner_provincias.getSelectedItem().toString();
         String edad = valor_edad.getText().toString();
         String sex = valorSexo(radioGroup);
+
         if (comprobarDatosFormularioAlumno(nombre_alumno, apellidos_alumno, telefono_alumno, email_alumno)) {
             if (formacion_alumno.length() == 0) {
                 formacion_alumno = " ----NO contesta en FORMACIÓN----";
             }
 
             alumno = new Alumno(nombre_alumno, apellidos_alumno, edad, sex, telefono_alumno, email_alumno, formacion_alumno, provincia);
+            alumno.setFoto(positio);
             listaAlumnos = ((MainActivity) getActivity()).getListaAlumnos();
             listaAlumnos.set(((MainActivity) getActivity()).valor, alumno);
-
-
-
-            Toast.makeText(getActivity(), "Se ha modificado corectamente " + nombre_alumno + " " + apellidos_alumno + " de " + edad + " edad y es " + " con formación en " + formacion_alumno + " de la provincia de " + provincia + "\n Total: " + numAlumnos + " registrados", Toast.LENGTH_LONG).show();
-
 
         }
 

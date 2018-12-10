@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -12,7 +14,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_weight="1"
-        android:background="#fff"
+        android:background="#e0e2e4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -193,7 +195,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="28dp"
                 android:text="Sexo"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/seekbar_edad" />
@@ -201,15 +203,15 @@
             <Button
                 android:id="@+id/btn_modificar_alumno"
                 android:layout_width="149dp"
-                android:layout_height="49dp"
+                android:layout_height="46dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="8dp"
                 android:text="GUARDAR"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.547"
+                app:layout_constraintHorizontal_bias="0.694"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGrou" />
+                app:layout_constraintTop_toBottomOf="@+id/spinner_foto_editar" />
 
             <SeekBar
                 android:id="@+id/seekBar"
@@ -228,22 +230,25 @@
             <TextView
                 android:id="@+id/seekbar_edad"
                 android:layout_width="wrap_content"
-                android:layout_height="19dp"
+                android:layout_height="23dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
                 android:text="Edad"
-                app:layout_constraintBaseline_toBaselineOf="@+id/seekbar_valorEdad"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textV_spinner_provincias" />
 
             <TextView
                 android:id="@+id/seekbar_valorEdad"
                 android:layout_width="28dp"
                 android:layout_height="17dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="8dp"
                 android:text="0"
                 android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
                 app:layout_constraintStart_toEndOf="@+id/seekbar_edad"
-                app:layout_constraintTop_toBottomOf="@+id/textV_spinner_provincias" />
+                tools:layout_editor_absoluteY="353dp"
+                tools:ignore="MissingConstraints" />
 
             <RadioGroup
                 android:id="@+id/radioGrou"
@@ -268,6 +273,28 @@
                     android:layout_height="wrap_content"
                     android:text="Femenino" />
             </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinner_foto_editar"
+                android:layout_width="84dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.776"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/radioGrou" />
+
+            <TextView
+                android:id="@+id/textView_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="48dp"
+                android:text="Foto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textV_sexo" />
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
