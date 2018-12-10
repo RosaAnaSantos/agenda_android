@@ -18,6 +18,10 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 import java.util.List;
 import butterknife.BindView;
@@ -50,7 +54,8 @@ public class FormularioEditar extends Fragment {
     private AlumnosRegistradosFragment alumnosRegistradosFragment;
     private AlumnosRegistradosFragment.OnEventoSeleccionado callback;
     private FormularioEditar formularioEditar;
-
+    private FirebaseDatabase database;
+    private DatabaseReference myRef;
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);

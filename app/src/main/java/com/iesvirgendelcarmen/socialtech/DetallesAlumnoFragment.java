@@ -19,6 +19,9 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -28,7 +31,7 @@ public class DetallesAlumnoFragment extends Fragment {
     @BindView(R.id.tvApellidos)
     TextView apellidos;
     @BindView(R.id.tvTelefono)
-    TextView  telefono;
+    TextView telefono;
     @BindView(R.id.tvEmail)
     TextView email;
     @BindView(R.id.tvProvincia)
@@ -47,10 +50,10 @@ public class DetallesAlumnoFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View vista=inflater.inflate(R.layout.detalles_alumno, container, false);
+        View vista = inflater.inflate(R.layout.detalles_alumno, container, false);
         ButterKnife.bind(this, vista);
-        Bundle bundle=getArguments();
-        Alumno alumno=(Alumno) bundle.get("EVENTO");
+        Bundle bundle = getArguments();
+        Alumno alumno = (Alumno) bundle.get("EVENTO");
 
         nombre.setText(alumno.getNombre());
         apellidos.setText(alumno.getApellidos());
@@ -60,8 +63,34 @@ public class DetallesAlumnoFragment extends Fragment {
         provincia.setText(alumno.getProvincia());
         edad.setText(alumno.getEdad());
         sexo.setText(alumno.getSexo());
-        return vista;
+        int posicion = alumno.getFoto();
 
+
+        if (posicion != 0) {
+            if (posicion == 1) {
+                foto.setImageResource(R.drawable.foto1);
+            } else if (posicion == 2) {
+                foto.setImageResource(R.drawable.foto2);
+            } else if (posicion == 3) {
+                foto.setImageResource(R.drawable.foto3);
+            } else if (posicion == 4) {
+                foto.setImageResource(R.drawable.foto4);
+            } else if (posicion == 5) {
+                foto.setImageResource(R.drawable.foto5);
+            } else if (posicion == 6) {
+                foto.setImageResource(R.drawable.foto6);
+            } else if (posicion == 7) {
+                foto.setImageResource(R.drawable.foto7);
+            } else if (posicion == 8) {
+                foto.setImageResource(R.drawable.foto8);
+            }
+
+        } else {
+            foto.setImageResource(R.drawable.foto0);
+
+        }
+ return vista;
     }
+
 
 }
