@@ -80,7 +80,7 @@ public class FormularioAlumnosFragment extends Fragment {
     int positio;
     private FirebaseDatabase database;
     private DatabaseReference myRef;
-
+    DataSnapshot dataSnapshot;
 
     @Nullable
     @Override
@@ -198,8 +198,6 @@ public class FormularioAlumnosFragment extends Fragment {
                             alumno.setKey(key);
                         }
                     });
-
-
 
                     totalAlumnos.setText(numAlumnos + " ");
                     limpiarCampos();

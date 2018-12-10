@@ -38,27 +38,6 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
     private FormularioAlumnosFragment fragmentFormulario = new FormularioAlumnosFragment();
     private AlumnosRegistradosFragment alumnosRegistradosFragment = new AlumnosRegistradosFragment();
     private FormularioEditar formularioEditar;
-    //-------------------------------------------------
-    /*
-    private Fragment fragmento1;
-    private ArrayList<Object> listaAlumno;
-    private AlumnoDAO alumnoDAO;
-    private Toolbar toolbar;
-    private Menu menu;
-    private boolean estado = false;
-    private String fragmentoActual;
-    private static final String NOMBRE_FRAGMENTO_LISTA_CONTACTOS = "class com.iesvirgendelcarmen.socialtech.AlumnosRegistradosFragment";
-    private static final String NOMBRE_FRAGMENTO_NUEVO_CONTACTO = "class es.iesvirgendelcarmen.socialtech.FormularioAlumnosFragmen";
-
-    //Firebase
-    private FirebaseAuth mAuth;
-    private FirebaseUser usuario;
-    private FirebaseDatabase database;
-    private DatabaseReference myRef;
-
-
-//----------------------------------------------
-*/
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     int valor = 0;
@@ -92,6 +71,7 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
         FragmentTransaction FT = FM.beginTransaction();
         FT.replace(R.id.contenedor, fragmento);
         cambiarTitulo(fragmento);
+        FT.addToBackStack("jmr");
         FT.commit();
     }
 
@@ -162,42 +142,6 @@ public class MainActivity  extends AppCompatActivity implements AlumnosRegistrad
 
        }
     }
-/*
-    public void obtenerDatosFirebase(final String fragmentoActual){
-        mAuth = FirebaseAuth.getInstance();
-        usuario = mAuth.getCurrentUser();
-        database = FirebaseDatabase.getInstance();
-        myRef = database.getReference(""+usuario.getUid());
 
-        myRef.child("listaAlumnos").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                if((dataSnapshot.getValue()) != null)
-                    listaAlumno = (ArrayList<Object>) dataSnapshot.getValue();
-
-                if(!listaAlumno.isEmpty())
-                    alumnoDAO.actualizarAlumnos(listaAlumno);
-                switch (fragmentoActual) {
-                    case NOMBRE_FRAGMENTO_LISTA_CONTACTOS:
-                        cambiarFragmento(new AlumnosRegistradosFragment());
-                        break;
-                    case NOMBRE_FRAGMENTO_NUEVO_CONTACTO:
-                        cambiarFragmento(new FormularioAlumnosFragment());
-                        break;
-                    default:
-                        break;
-
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }
-
-
-*/
 
 }

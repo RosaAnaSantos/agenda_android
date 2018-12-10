@@ -20,29 +20,7 @@ android:background="#fff">
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:layout_marginTop="15dp">
-<!--
-    <TextView
-        android:id="@+id/textV_titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:shadowColor="#a0a0a0"
-        android:shadowDx="8"
-        android:shadowDy="8"
-        android:shadowRadius="4"
-        android:text="Registrar nuevo Alumno"
-        android:textAlignment="center"
-        android:textColor="#484f89"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:typeface="serif"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
--->
-    <android.support.constraint.Barrier
+  <android.support.constraint.Barrier
         android:id="@+id/barrier"
         android:layout_width="0dp"
         android:layout_height="0dp"
