@@ -17,8 +17,6 @@
   <component name="ChangeListManager">
     <list default="true" id="86b6a0e1-e8db-4bf8-b453-8a70f77bf631" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioAlumnosFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormularioEditar.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FormularioEditar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1037">
@@ -89,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formulario_editar.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="formulario_editar.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4080">
-              <caret line="240" column="6" selection-start-line="240" selection-start-column="6" selection-end-line="240" selection-end-column="6" />
+            <state relative-caret-position="468">
+              <caret line="261" column="57" selection-start-line="261" selection-start-column="56" selection-end-line="261" selection-end-column="57" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
@@ -2662,12 +2660,25 @@
       <option name="project" value="LOCAL" />
       <updated>1544468386274</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se modifica el formulario editar para poder cambiar la foto.">
+      <created>1544475214603</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544475214603</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Se corrige el TextView edad que se había soltado y se había subido al principio.">
+      <created>1544475594656</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544475594656</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Android Profiler" order="1" />
@@ -2742,7 +2753,9 @@
     <MESSAGE value="Se modifica en activity principal para que no se rompa la app al volver hacia atrás, que sólo se salga desde la activity inicial en el fragment inicial.Con lo cual se puede retroceder lo avanzadosin que se rompa." />
     <MESSAGE value="Se modifica en activity principal para que no se rompa la app al volver hacia atrás, que sólo se salga desde la activity inicial en el fragment inicial.Con lo cual se puede retroceder lo avanzado." />
     <MESSAGE value="Se modifica  archivo Manifest para que el teclado sólo se muestre visible al hacer clik en Editext." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modifica  archivo Manifest para que el teclado sólo se muestre visible al hacer clik en Editext." />
+    <MESSAGE value="Se modifica el formulario editar para poder cambiar la foto." />
+    <MESSAGE value="Se corrige el TextView edad que se había soltado y se había subido al principio." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se corrige el TextView edad que se había soltado y se había subido al principio." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_alumnos.xml">
@@ -2809,21 +2822,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4080">
-          <caret line="240" column="6" selection-start-line="240" selection-start-column="6" selection-end-line="240" selection-end-column="6" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/iesvirgendelcarmen/socialtech/FormularioEditar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1037">
           <caret line="189" selection-start-line="189" selection-end-line="189" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/formulario_editar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="261" column="57" selection-start-line="261" selection-start-column="56" selection-end-line="261" selection-end-column="57" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
